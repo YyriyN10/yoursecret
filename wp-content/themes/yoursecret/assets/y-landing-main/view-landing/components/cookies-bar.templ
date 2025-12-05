@@ -1,0 +1,29 @@
+package components
+
+templ CookiesBar() {
+    <section class="bg-white py-5" id="cookies-bar">
+        <div class="container px-5">
+            <div class="row align-items-center">
+                <hr class="my-3" />
+                <div class="col-md-8">
+                    <p class="mb-0">
+                        <b>YourSecret</b> We use cookies to ensure the proper functioning of our website, personalize ads and content, provide social media features, and analyze our traffic. We may also share information about your use of our site with our analytics, advertising, and social media partners.
+                    </p>
+                </div>
+                <div class="col-md-4 text-md-end">
+                    <a href="#!" class="btn btn-outline-secondary2 btn-sm hide-cookies-bar">More options</a>
+                    <a href="#!" class="btn btn-outline-secondary2 btn-sm hide-cookies-bar">Decline all</a>
+                    <a href="#!" class="btn btn-primary btn-sm me-2 hide-cookies-bar">Accept all</a>
+                </div>
+                <hr class="my-3" />
+            </div>
+        </div>
+    </section>
+    <script>
+        document.querySelectorAll('.hide-cookies-bar').forEach(button => {
+            button.addEventListener('click', () => {
+                document.getElementById('cookies-bar').style.display = 'none';
+            });
+        });
+    </script>
+}

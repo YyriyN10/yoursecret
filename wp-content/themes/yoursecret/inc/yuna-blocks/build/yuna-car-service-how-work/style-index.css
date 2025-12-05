@@ -1,0 +1,108 @@
+/*!*****************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/yuna-car-service-how-work/style.scss ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.wp-block-yuna-car-service-how-work {
+  background-color: var(--color-black);
+}
+.wp-block-yuna-car-service-how-work .block-name {
+  color: var(--color-gray);
+}
+.wp-block-yuna-car-service-how-work .block-title {
+  margin-bottom: 80px;
+}
+@media (max-width: 1200px) {
+  .wp-block-yuna-car-service-how-work .block-title {
+    margin-bottom: 70px;
+  }
+}
+@media (max-width: 767px) {
+  .wp-block-yuna-car-service-how-work .block-title {
+    margin-bottom: 32px;
+  }
+}
+.wp-block-yuna-car-service-how-work .text {
+  color: var(--color-gray);
+}
+@media (max-width: 767px) {
+  .wp-block-yuna-car-service-how-work .text {
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 440px) {
+  .wp-block-yuna-car-service-how-work .text {
+    margin-bottom: 50px;
+  }
+}
+.wp-block-yuna-car-service-how-work .text p {
+  margin-bottom: 8px;
+}
+.wp-block-yuna-car-service-how-work .text p:last-child {
+  margin-bottom: 0;
+}
+.wp-block-yuna-car-service-how-work .step-list {
+  gap: 40px;
+  margin: 0;
+  display: grid;
+}
+@media (max-width: 992px) {
+  .wp-block-yuna-car-service-how-work .step-list {
+    gap: 32px;
+  }
+}
+@media (max-width: 767px) {
+  .wp-block-yuna-car-service-how-work .step-list {
+    margin-bottom: 32px;
+    gap: 24px;
+  }
+}
+.wp-block-yuna-car-service-how-work .step-list .item {
+  list-style: none;
+  width: 100%;
+  padding: 12px 12px 12px 32px;
+  border-left: 2px solid var(--color-red);
+  transition: all 0.3s;
+}
+@media (max-width: 1200px) {
+  .wp-block-yuna-car-service-how-work .step-list .item {
+    padding-left: 24px;
+  }
+}
+@media (max-width: 440px) {
+  .wp-block-yuna-car-service-how-work .step-list .item {
+    padding-right: 0;
+    padding-left: 12px;
+  }
+}
+.wp-block-yuna-car-service-how-work .step-list .item .name {
+  font-weight: 600;
+  margin-bottom: 16px;
+  transition: all 0.3s;
+  text-transform: capitalize;
+}
+.wp-block-yuna-car-service-how-work .step-list .item .description {
+  margin-bottom: 0;
+  color: var(--color-gray);
+}
+.wp-block-yuna-car-service-how-work .image-wrapper .inner {
+  border-radius: 15px;
+  overflow: hidden;
+  height: 100%;
+  position: relative;
+}
+@media (max-width: 767px) {
+  .wp-block-yuna-car-service-how-work .image-wrapper .inner {
+    padding-bottom: 60%;
+  }
+}
+.wp-block-yuna-car-service-how-work .image-wrapper .inner img {
+  position: absolute;
+  inset: 0;
+}
+
+/*# sourceMappingURL=style-index.css.map*/

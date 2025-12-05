@@ -1,0 +1,82 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-yuna-yuna-clining-about-service {
+  background-color: var(--color-white);
+
+  .text-content{
+    padding-top: 55px;
+    padding-bottom: 55px;
+
+    @media(max-width: 767px){
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+
+    @media(max-width: 575px){
+      padding-top: 0;
+      padding-bottom: 0;
+      margin-bottom: 30px;
+    }
+
+    p{
+      margin-bottom: 8px;
+
+
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+    .button{
+      margin-top: 40px;
+
+      @media(max-width: 575px){
+        margin-top: 30px;
+      }
+    }
+  }
+
+  .image-wrapper{
+    position: relative;
+
+    img{
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      border-radius: 0 24px 24px 0;
+
+      @media(max-width: 575px){
+        border-radius: 0 0 24px 24px;
+      }
+
+    }
+
+    &:before{
+      content: '';
+      position: absolute;
+      z-index: 2;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 40%;
+      background: linear-gradient(90deg, var(--color-white) 0%, var(--color-white) 10%, rgba(0,0,0,0) 100%);
+
+      @media(max-width: 992px){
+        width: 100%;
+      }
+
+      @media(max-width: 575px){
+        bottom: auto;
+        right: 0;
+        top: -2px;
+        background: linear-gradient(180deg, var(--color-white) 0%, var(--color-white) 10%, rgba(0,0,0,0) 100%);
+        height: 100%;
+      }
+
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.post-preview{
+  background-color: #eaf2ff;
+  border-radius: 20px;
+
+  span{
+    display: block;
+  }
+
+  .post-image{
+    width: 200px;
+    height: 130px;
+    object-fit: cover;
+  }
+
+  .post-name{
+    color: #363d47 !important;
+  }
+
+  .post-category{
+    background-color: #f0f0f0;
+  }
+}

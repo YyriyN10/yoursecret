@@ -1,0 +1,60 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-yuna-car-service-all-services {
+  background-color: var(--color-black);
+
+  .row{
+    row-gap: 24px;
+  }
+
+  .service-preview{
+    span{
+      display: block;
+    }
+
+    .inner{
+      height: 100%;
+      background-color: var(--color-soft-black);
+      border-radius: 15px;
+      padding: 64px 24px;
+      position: relative;
+    }
+
+    .icon{
+      width: 118px;
+      margin: 0 auto 16px;
+
+      .svg-pic{
+        width: 100%;
+        height: auto;
+
+        path{
+          fill: var(--color-soft-red);
+        }
+      }
+    }
+
+    .name{
+      margin-bottom: 16px;
+      color: var(--color-white) !important;
+    }
+
+    .description{
+      font-size: 16px;
+      margin-bottom: 24px;
+      color: var(--color-gray) !important;
+    }
+
+    .button{
+      position: absolute;
+      bottom: 64px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}

@@ -1,0 +1,149 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-yuna-yuna-clining-reviews {
+  background-color: var(--color-white);
+
+  .text-content{
+    margin-bottom: 30px;
+  }
+
+  .block-title{
+    color: var(--color-black);
+    margin-bottom: 40px;
+
+    @media(max-width: 992px){
+      margin-bottom: 30px;
+    }
+  }
+
+  .text{
+    margin-bottom: 40px;
+
+    @media(max-width: 992px){
+      margin-bottom: 30px;
+    }
+
+    p{
+      margin-bottom: 8px;
+
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .control-wrapper{
+    gap: 15px;
+    display: flex;
+  }
+
+  .slide{
+    margin: 15px;
+    border-radius: 24px;
+    border: 1px solid var(--color-gray);
+    background-color: var(--color-white);
+    padding: 40px 20px 40px 30px;
+    -webkit-box-shadow: 0 0 15px 1px rgba(0,0,0,0.2);
+    box-shadow: 0 0 15px 1px rgba(0,0,0,0.2);
+
+    @media(max-width: 1200px){
+      padding: 30px 5px 30px 15px;
+    }
+
+    @media(max-width: 992px){
+      padding: 30px 10px 30px 20px;
+    }
+
+    @media(max-width: 767px){
+      padding: 40px 20px 40px 30px;
+    }
+
+    @media(max-width: 380px){
+      padding: 30px 10px 30px 20px;
+    }
+
+    .review-text{
+      margin-bottom: 30px;
+      height: 160px;
+      overflow-y: scroll;
+      scrollbar-color: var(--color-accent) var(--color-white);
+      scrollbar-width: thin;
+      padding-right: 10px;
+
+      @media(max-width: 767px){
+        height: 150px;
+      }
+
+      p{
+        margin-bottom: 8px;
+
+        &:last-child{
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    .review-info{
+      display: flex;
+      align-items: center;
+
+      .avatar{
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        overflow: hidden;
+        background-color: var(--color-accent);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @media(max-width: 1200px){
+          width: 60px;
+          height: 60px;
+        }
+
+        @media(max-width: 440px){
+          width: 50px;
+          height: 50px;
+        }
+
+        p{
+          color: var(--color-white);
+          text-transform: uppercase;
+          margin-bottom: 0;
+          text-align: center;
+          font-size: 34px;
+          font-weight: 700;
+        }
+      }
+
+      .name{
+        flex: 1;
+        margin-bottom: 0;
+        color: var(--color-black);
+        font-weight: 500;
+        letter-spacing: -0.01em;
+        padding-left: 20px;
+
+        @media(max-width: 440px){
+          padding-left: 15px;
+        }
+      }
+    }
+  }
+
+  .slick-dots{
+    li{
+      background-color: var(--color-gray);
+
+      &.slick-active{
+        background-color: var(--color-accent);
+      }
+    }
+  }
+}

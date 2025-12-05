@@ -1,0 +1,42 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "yuna/car-service-faq-inner",
+  "version": "0.1.0",
+  "title": "Inner card",
+  "category": "yuna-inner-block-category",
+  "icon": "dashicons-block-default",
+  "description": "Inner card",
+  "example": {},
+  "attributes": {
+    "itemName": {
+      "type": "string",
+      "default": ""
+    },
+    "itemDescription": {
+      "type": "string",
+      "default": ""
+    },
+    "blockIndex": {
+      "type": "number",
+      "default": 0
+    }
+  },
+
+  "supports": {
+    "color": {
+      "background": true,
+      "text": true
+    },
+
+    "html": false
+
+  },
+  "parent": ["yuna/car-service-faq"],
+  "textdomain": "yuna-car-service",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "render": "file:./render.php"
+}
+
+

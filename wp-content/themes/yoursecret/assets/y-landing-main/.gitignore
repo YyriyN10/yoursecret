@@ -1,0 +1,7 @@
+.vscode
+.env
+debug.env
+.idea
+db-data
+/bin
+/proxies/*

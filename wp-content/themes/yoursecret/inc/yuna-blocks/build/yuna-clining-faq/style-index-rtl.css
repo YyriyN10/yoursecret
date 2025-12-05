@@ -1,0 +1,124 @@
+/*!********************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/yuna-clining-faq/style.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.wp-block-yuna-yuna-clining-faq {
+  background-color: var(--color-white);
+}
+.wp-block-yuna-yuna-clining-faq .block-title {
+  color: var(--color-black);
+  margin-bottom: 0;
+}
+.wp-block-yuna-yuna-clining-faq .text {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.wp-block-yuna-yuna-clining-faq .accordion-faq {
+  display: grid;
+  gap: 30px;
+}
+.wp-block-yuna-yuna-clining-faq .accordion-faq .card {
+  border-radius: 24px;
+  border: 1px solid var(--color-accent);
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+}
+.wp-block-yuna-yuna-clining-faq .accordion-faq .card .card-header .btn {
+  padding: 30px 30px 15px 90px;
+  position: relative;
+  color: var(--color-black) !important;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+@media (max-width: 1200px) {
+  .wp-block-yuna-yuna-clining-faq .accordion-faq .card .card-header .btn {
+    font-size: 22px;
+  }
+}
+@media (max-width: 767px) {
+  .wp-block-yuna-yuna-clining-faq .accordion-faq .card .card-header .btn {
+    font-size: 20px;
+  }
+}
+@media (max-width: 440px) {
+  .wp-block-yuna-yuna-clining-faq .accordion-faq .card .card-header .btn {
+    font-size: 18px;
+    padding: 20px 20px 10px 60px;
+  }
+}
+.wp-block-yuna-yuna-clining-faq .accordion-faq .card .card-header .btn .indicator {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media (max-width: 440px) {
+  .wp-block-yuna-yuna-clining-faq .accordion-faq .card .card-header .btn .indicator {
+    width: 20px;
+    height: 20px;
+    left: 20px;
+  }
+}
+.wp-block-yuna-yuna-clining-faq .accordion-faq .card .card-header .btn .indicator:before, .wp-block-yuna-yuna-clining-faq .accordion-faq .card .card-header .btn .indicator:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  transform-origin: center;
+  height: 2px;
+  width: 100%;
+  background: var(--color-accent);
+  transition: all 0.3s;
+}
+.wp-block-yuna-yuna-clining-faq .accordion-faq .card .card-header .btn .indicator:after {
+  transform: rotate(0deg);
+}
+.wp-block-yuna-yuna-clining-faq .accordion-faq .card .card-header .btn.collapsed {
+  padding-bottom: 30px;
+}
+@media (max-width: 440px) {
+  .wp-block-yuna-yuna-clining-faq .accordion-faq .card .card-header .btn.collapsed {
+    padding-bottom: 20px;
+  }
+}
+.wp-block-yuna-yuna-clining-faq .accordion-faq .card .card-header .btn.collapsed .indicator:before, .wp-block-yuna-yuna-clining-faq .accordion-faq .card .card-header .btn.collapsed .indicator:after {
+  background: var(--color-gray);
+}
+.wp-block-yuna-yuna-clining-faq .accordion-faq .card .card-header .btn.collapsed .indicator:after {
+  transform: rotate(-90deg);
+}
+.wp-block-yuna-yuna-clining-faq .accordion-faq .card .card-body {
+  padding: 0 30px 30px 30px;
+}
+@media (max-width: 440px) {
+  .wp-block-yuna-yuna-clining-faq .accordion-faq .card .card-body {
+    padding: 0 20px 20px 20px;
+  }
+}
+.wp-block-yuna-yuna-clining-faq .accordion-faq .card .card-body {
+  /*padding: 0 90px 30px 30px;
+
+  @media(max-width: 440px){
+    padding: 0 60px 20px 20px;
+  }*/
+}
+.wp-block-yuna-yuna-clining-faq .accordion-faq .card .card-body p {
+  margin-bottom: 8px;
+}
+.wp-block-yuna-yuna-clining-faq .accordion-faq .card .card-body p:last-child {
+  margin-bottom: 0;
+}
+.wp-block-yuna-yuna-clining-faq .accordion-faq .card .card-body ul,
+.wp-block-yuna-yuna-clining-faq .accordion-faq .card .card-body ol {
+  margin-right: 0;
+}

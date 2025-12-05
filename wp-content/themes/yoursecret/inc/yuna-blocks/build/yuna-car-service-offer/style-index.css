@@ -1,0 +1,42 @@
+/*!**************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/yuna-car-service-offer/style.scss ***!
+  \**************************************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.wp-block-yuna-car-service-offer {
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.wp-block-yuna-car-service-offer:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: var(--color-black);
+  opacity: 0.7;
+  z-index: 1;
+}
+.wp-block-yuna-car-service-offer .container {
+  position: relative;
+  z-index: 2;
+}
+.wp-block-yuna-car-service-offer .block-title {
+  margin-bottom: 16px;
+}
+.wp-block-yuna-car-service-offer .text p {
+  margin-bottom: 8px;
+}
+.wp-block-yuna-car-service-offer .text p:last-child {
+  margin-bottom: 0;
+}
+.wp-block-yuna-car-service-offer .button {
+  margin-top: 32px;
+}
+
+/*# sourceMappingURL=style-index.css.map*/

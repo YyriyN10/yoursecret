@@ -1,0 +1,53 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+
+.wp-block-yuna-car-service-breadcrumbs{
+  padding-top: 24px;
+  padding-bottom: 24px;
+  background-color: var(--color-soft-black);
+
+  .breadcrumbs-list{
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+
+    .crumb{
+      list-style: none;
+      display: flex;
+      gap: 5px;
+      font-size: 14px;
+      align-items: center;
+      color: var(--color-gray);
+
+      a{
+        color: var(--color-gray) !important;
+        transition: all 0.3s;
+
+        &:hover{
+          color: var(--color-soft-red) !important;
+        }
+      }
+
+      svg{
+        width: 16px;
+        height: auto;
+
+        path{
+          stroke: var(--color-gray);
+        }
+      }
+
+      &.current-crumb{
+        font-weight: 500;
+        color: var(--color-white);
+      }
+    }
+  }
+
+}

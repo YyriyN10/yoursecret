@@ -1,0 +1,146 @@
+/*!******************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/yuna-clining-servise-price/style.scss ***!
+  \******************************************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.wp-block-yuna-yuna-clining-service-price {
+  background-color: var(--color-white);
+}
+.wp-block-yuna-yuna-clining-service-price .content {
+  position: relative;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.wp-block-yuna-yuna-clining-service-price .content:before {
+  content: "";
+  position: absolute;
+  inset: 0 -30px;
+  border-radius: 24px;
+  background-color: var(--color-accent);
+}
+@media (max-width: 575px) {
+  .wp-block-yuna-yuna-clining-service-price .content:before {
+    inset: 0;
+  }
+}
+.wp-block-yuna-yuna-clining-service-price .text-wrapper {
+  position: relative;
+  z-index: 2;
+  width: calc(40% - 15px);
+}
+@media (max-width: 1400px) {
+  .wp-block-yuna-yuna-clining-service-price .text-wrapper {
+    width: calc(45% - 15px);
+  }
+}
+@media (max-width: 992px) {
+  .wp-block-yuna-yuna-clining-service-price .text-wrapper {
+    width: calc(50% - 15px);
+  }
+}
+@media (max-width: 767px) {
+  .wp-block-yuna-yuna-clining-service-price .text-wrapper {
+    width: 100%;
+  }
+}
+.wp-block-yuna-yuna-clining-service-price .image-wrapper {
+  border-radius: 24px;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+  width: calc(60% - 15px);
+}
+@media (max-width: 1400px) {
+  .wp-block-yuna-yuna-clining-service-price .image-wrapper {
+    width: calc(55% - 15px);
+  }
+}
+@media (max-width: 992px) {
+  .wp-block-yuna-yuna-clining-service-price .image-wrapper {
+    width: calc(50% - 15px);
+  }
+}
+@media (max-width: 767px) {
+  .wp-block-yuna-yuna-clining-service-price .image-wrapper {
+    width: 100%;
+    padding-bottom: 40%;
+  }
+}
+.wp-block-yuna-yuna-clining-service-price .image-wrapper img {
+  position: absolute;
+  inset: 0;
+}
+.wp-block-yuna-yuna-clining-service-price .block-title {
+  color: var(--color-black);
+  margin-bottom: 40px;
+}
+@media (max-width: 992px) {
+  .wp-block-yuna-yuna-clining-service-price .block-title {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 575px) {
+  .wp-block-yuna-yuna-clining-service-price .block-title {
+    text-align: center;
+  }
+}
+.wp-block-yuna-yuna-clining-service-price .price-list {
+  margin: 0;
+  padding: 30px;
+  gap: 15px;
+  display: grid;
+  background-color: var(--color-white);
+  border-radius: 24px;
+}
+@media (max-width: 440px) {
+  .wp-block-yuna-yuna-clining-service-price .price-list {
+    padding: 30px 15px;
+    gap: 10px;
+  }
+}
+.wp-block-yuna-yuna-clining-service-price .price-list .item {
+  display: flex;
+  align-items: center;
+}
+.wp-block-yuna-yuna-clining-service-price .price-list .item .icon {
+  width: 24px;
+  margin-right: 15px;
+}
+@media (max-width: 440px) {
+  .wp-block-yuna-yuna-clining-service-price .price-list .item .icon {
+    width: 20px;
+    margin-right: 10px;
+  }
+}
+.wp-block-yuna-yuna-clining-service-price .price-list .item .icon svg {
+  height: auto;
+  width: 100%;
+  filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.1));
+}
+.wp-block-yuna-yuna-clining-service-price .price-list .item .icon svg path {
+  fill: var(--color-accent);
+}
+.wp-block-yuna-yuna-clining-service-price .price-list .item .text {
+  flex: 1;
+}
+.wp-block-yuna-yuna-clining-service-price .price-list .item .text p {
+  margin-bottom: 0;
+  display: inline-block;
+  color: var(--color-black);
+}
+.wp-block-yuna-yuna-clining-service-price .price-list .item .text p.name {
+  font-weight: 500;
+  padding-right: 10px;
+}
+@media (max-width: 440px) {
+  .wp-block-yuna-yuna-clining-service-price .price-list .item .text p.name {
+    padding-right: 5px;
+  }
+}
+
+/*# sourceMappingURL=style-index.css.map*/

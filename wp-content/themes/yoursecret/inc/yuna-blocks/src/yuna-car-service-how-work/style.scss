@@ -1,0 +1,111 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-yuna-car-service-how-work {
+  background-color: var(--color-black);
+
+  .block-name{
+    color: var(--color-gray);
+  }
+
+  .block-title{
+    margin-bottom: 80px;
+
+    @media(max-width: 1200px){
+      margin-bottom: 70px;
+    }
+
+    @media(max-width: 767px){
+      margin-bottom: 32px;
+    }
+
+  }
+
+  .text{
+    color: var(--color-gray);
+
+    @media(max-width: 767px){
+      margin-bottom: 60px;
+    }
+
+    @media(max-width: 440px){
+      margin-bottom: 50px;
+    }
+
+
+    p{
+      margin-bottom: 8px;
+
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .step-list{
+    gap: 40px;
+    margin: 0;
+    display: grid;
+
+    @media(max-width: 992px){
+      gap: 32px;
+    }
+
+    @media(max-width: 767px){
+      margin-bottom: 32px;
+      gap: 24px;
+    }
+
+    .item{
+      list-style: none;
+      width: 100%;
+      padding: 12px 12px 12px 32px;
+      border-left: 2px solid var(--color-red);
+      transition: all 0.3s;
+
+      @media(max-width: 1200px){
+        padding-left: 24px;
+      }
+
+      @media(max-width: 440px){
+        padding-right: 0;
+        padding-left: 12px;
+      }
+
+      .name{
+        font-weight: 600;
+        margin-bottom: 16px;
+        transition: all 0.3s;
+        text-transform: capitalize;
+      }
+
+      .description{
+        margin-bottom: 0;
+        color: var(--color-gray);
+      }
+
+    }
+  }
+
+  .image-wrapper{
+    .inner{
+      border-radius: 15px;
+      overflow: hidden;
+      height: 100%;
+      position: relative;
+
+      @media(max-width: 767px){
+        padding-bottom: 60%;
+      }
+
+      img{
+        position: absolute;
+        inset: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "yoursecret/inner-page-section-text-and-blocks",
+  "version": "0.1.0",
+  "title": "Inner page section with text and blocks",
+  "category": "yuna-block-category",
+  "icon": "media-document",
+  "description": "Inner page section with text and blocks",
+  "example": {},
+  "attributes": {
+    "sectionTitle": {
+      "type": "string",
+      "default": ""
+    },
+    "sectionText": {
+      "type": "string",
+      "default": ""
+    },
+    "sectionList": {
+      "type": "string",
+      "default": ""
+    },
+    "arrowImage": {
+      "type": "string",
+      "default": ""
+    },
+    "btnText": {
+      "type": "string",
+      "default": ""
+    },
+    "btnLink": {
+      "type": "string",
+      "default": ""
+    },
+    "btnCall": {
+      "type": "string",
+      "default": ""
+    },
+    "lastInPage": {
+      "type": "boolean",
+      "default": false
+    },
+    "blueDecorToggle": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "supports": {
+    "html": false
+  },
+  "textdomain": "yoursecret",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php"
+}

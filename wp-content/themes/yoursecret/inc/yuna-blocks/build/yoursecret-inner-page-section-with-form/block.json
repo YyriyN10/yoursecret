@@ -1,0 +1,41 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "yoursecret/inner-page-section-with-form",
+  "version": "0.1.0",
+  "title": "Inner page section with form",
+  "category": "yuna-block-category",
+  "icon": "forms",
+  "description": "Inner page section with form",
+  "example": {},
+  "attributes": {
+    "sectionTitle": {
+      "type": "string",
+      "default": ""
+    },
+    "arrowImage": {
+      "type": "string",
+      "default": ""
+    },
+    "lastInPage": {
+      "type": "boolean",
+      "default": false
+    },
+    "btnText": {
+      "type": "string",
+      "default": ""
+    },
+    "blueDecorToggle": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "supports": {
+    "html": false
+  },
+  "textdomain": "yoursecret",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php"
+}

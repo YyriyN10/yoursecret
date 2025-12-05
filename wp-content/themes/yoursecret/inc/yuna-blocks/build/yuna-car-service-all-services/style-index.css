@@ -1,0 +1,53 @@
+/*!*********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/yuna-car-service-all-services/style.scss ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.wp-block-yuna-car-service-all-services {
+  background-color: var(--color-black);
+}
+.wp-block-yuna-car-service-all-services .row {
+  row-gap: 24px;
+}
+.wp-block-yuna-car-service-all-services .service-preview span {
+  display: block;
+}
+.wp-block-yuna-car-service-all-services .service-preview .inner {
+  height: 100%;
+  background-color: var(--color-soft-black);
+  border-radius: 15px;
+  padding: 64px 24px;
+  position: relative;
+}
+.wp-block-yuna-car-service-all-services .service-preview .icon {
+  width: 118px;
+  margin: 0 auto 16px;
+}
+.wp-block-yuna-car-service-all-services .service-preview .icon .svg-pic {
+  width: 100%;
+  height: auto;
+}
+.wp-block-yuna-car-service-all-services .service-preview .icon .svg-pic path {
+  fill: var(--color-soft-red);
+}
+.wp-block-yuna-car-service-all-services .service-preview .name {
+  margin-bottom: 16px;
+  color: var(--color-white) !important;
+}
+.wp-block-yuna-car-service-all-services .service-preview .description {
+  font-size: 16px;
+  margin-bottom: 24px;
+  color: var(--color-gray) !important;
+}
+.wp-block-yuna-car-service-all-services .service-preview .button {
+  position: absolute;
+  bottom: 64px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/*# sourceMappingURL=style-index.css.map*/

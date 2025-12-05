@@ -1,0 +1,61 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "yuna/what-you-get",
+  "version": "0.1.0",
+  "title": "Що ви отримуєте",
+  "icon": "awards",
+  "category": "yuna-block-category",
+  "description": "Що ви отримуєте",
+  "example": {},
+  "attributes": {
+    "anchorId": {
+      "type": "string"
+    },
+    "topIndent": {
+      "enum": [
+        "indent-top-big",
+        "indent-top-small"
+      ],
+      "default": "indent-top-big",
+      "type": "string"
+    },
+    "bottomIndent": {
+      "enum": [
+        "indent-bottom-big",
+        "indent-bottom-small"
+      ],
+      "default": "indent-bottom-big",
+      "type": "string"
+    },
+    "blockTitle": {
+      "type": "string"
+    },
+    "imageUrl": {
+      "type": "string",
+      "default": ""
+    },
+    "imageId": {
+      "type": "number",
+      "default": 0
+    },
+    "imegeAlt": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "supports": {
+    "color": {
+      "background": true,
+      "text": true,
+      "heading": true,
+      "gradients": true
+    },
+    "html": false
+  },
+  "textdomain": "yuna",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php"
+}

@@ -1,0 +1,90 @@
+/*!***************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/yuna-clining-advantages/style.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.wp-block-yuna-yuna-clining-advantages {
+  background-color: var(--color-white);
+}
+.wp-block-yuna-yuna-clining-advantages .content {
+  position: relative;
+}
+.wp-block-yuna-yuna-clining-advantages .content:before {
+  content: "";
+  position: absolute;
+  inset: 0 -30px;
+  border-radius: 24px;
+  background-color: var(--color-accent);
+}
+@media (max-width: 575px) {
+  .wp-block-yuna-yuna-clining-advantages .content:before {
+    inset: 0;
+  }
+}
+.wp-block-yuna-yuna-clining-advantages .block-title {
+  color: var(--color-black);
+  margin-bottom: 50px;
+  position: relative;
+  z-index: 2;
+}
+@media (max-width: 992px) {
+  .wp-block-yuna-yuna-clining-advantages .block-title {
+    margin-bottom: 40px;
+  }
+}
+.wp-block-yuna-yuna-clining-advantages .advantages-list {
+  margin: 0;
+  padding: 0;
+  gap: 30px;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+}
+.wp-block-yuna-yuna-clining-advantages .advantages-list .item {
+  width: calc(40% - 15px);
+  border-radius: 24px;
+  background-color: var(--color-white);
+  padding: 40px;
+  text-align: center;
+}
+@media (max-width: 992px) {
+  .wp-block-yuna-yuna-clining-advantages .advantages-list .item {
+    width: calc(50% - 15px);
+  }
+}
+@media (max-width: 767px) {
+  .wp-block-yuna-yuna-clining-advantages .advantages-list .item {
+    padding: 20px;
+  }
+}
+@media (max-width: 575px) {
+  .wp-block-yuna-yuna-clining-advantages .advantages-list .item {
+    width: 70%;
+    min-width: 290px;
+  }
+}
+.wp-block-yuna-yuna-clining-advantages .advantages-list .item .icon {
+  height: 50px;
+  margin: 0 auto 30px;
+}
+.wp-block-yuna-yuna-clining-advantages .advantages-list .item .icon .svg-pic {
+  height: 100%;
+  width: auto;
+  filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.1));
+}
+.wp-block-yuna-yuna-clining-advantages .advantages-list .item .icon .svg-pic path {
+  fill: var(--color-accent);
+}
+.wp-block-yuna-yuna-clining-advantages .advantages-list .item .name {
+  margin-bottom: 30px;
+  color: var(--color-black);
+}
+.wp-block-yuna-yuna-clining-advantages .advantages-list .item .description {
+  margin-bottom: 0;
+}
+
+/*# sourceMappingURL=style-index.css.map*/

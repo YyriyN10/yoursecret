@@ -1,0 +1,34 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "yuna/car-service-numbers",
+  "version": "0.1.0",
+  "title": "Our numbers",
+  "icon": "performance",
+  "category": "yuna-block-category",
+  "description": "Our numbers",
+  "example": {},
+  "attributes": {
+    "anchorId": {
+      "type": "string"
+    }
+  },
+
+  "supports": {
+    "color": {
+      "background": true,
+      "text": true,
+      "heading": true,
+      "gradients": true
+    },
+    "html": false
+  },
+  "textdomain": "yuna-car-service",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php"
+
+}
+
+

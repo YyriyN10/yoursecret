@@ -1,0 +1,73 @@
+package pages
+
+import (
+	"fmt"
+	"y-landing/models"
+	"y-landing/view-landing/layout"
+)
+
+templ Blog(blogs []models.PostData, categories []models.Category, pages int, currentPage int, limit int, selectedCategory string) {
+	@layout.Base("Blog", "") {
+		<section class="bg-light py-5">
+			<div class="container px-5 mb-4">
+				<ul class="nav nav-pills justify-content-center flex-wrap">
+					if selectedCategory == "All" {
+						<li class="nav-item">
+							<a class="nav-link active" href="/blog">All</a>
+						</li>
+					} else {
+						<li class="nav-item">
+							<a class="nav-link" href="/blog">All</a>
+						</li>
+					}
+					for _, category := range categories {
+						if category.Slug == selectedCategory {
+							<li class="nav-item">
+								<a class="nav-link active" href={ templ.URL(fmt.Sprintf("/blog/%s", category.Slug)) }>{ category.Name }</a>
+							</li>
+						} else {
+							<li class="nav-item">
+								<a class="nav-link" href={ templ.URL(fmt.Sprintf("/blog/%s", category.Slug)) }>{ category.Name }</a>
+							</li>
+						}
+					}
+				</ul>
+			</div>
+			<div class="container px-5">
+				<div class="row gy-4">
+					for _, blog := range blogs {
+						<div class="col-12">
+							<a
+								href={ templ.URL(fmt.Sprintf("/blog/%s/%s", blog.CategorySlug, blog.Slug)) }
+								class="d-flex flex-column flex-md-row align-items-start rounded text-decoration-none p-3"
+								style="background-color: #eaf2ff; border-radius: 20px;"
+							>
+								<img
+									src={ blog.ImageLink }
+									alt={ blog.Title }
+									class="rounded img-fluid mb-3 mb-md-0"
+									style="width: 200px; height: 130px; object-fit: cover;"
+								/>
+								<div class="ps-md-4">
+									<h5 class="fw-semibold mb-2 fs-5 fs-md-4">
+										{ blog.Title }
+									</h5>
+									<p class="mb-2 text-muted small">
+										{ blog.ShortText }
+									</p>
+									<div class="d-flex align-items-center text-muted small gap-2 flex-wrap">
+										<span class="px-2 py-1 border rounded-pill" style="background-color: #f0f0f0;">
+											{ blog.CategoryName }
+										</span>
+										<span>{ blog.Format(blog.CreatedAt) }</span>
+									</div>
+								</div>
+							</a>
+						</div>
+					}
+				</div>
+				@layout.Pages(pages, currentPage, limit)
+			</div>
+		</section>
+	}
+}

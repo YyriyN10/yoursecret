@@ -1,0 +1,69 @@
+/*!*****************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/yuna-about-me/style.scss ***!
+  \*****************************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.wp-block-yuna-about-me {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+}
+.wp-block-yuna-about-me .block-title {
+  margin-bottom: 75px;
+}
+.wp-block-yuna-about-me .pic {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.wp-block-yuna-about-me .pic:before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: -20px;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: var(--color-accent);
+  border-radius: 3px;
+  opacity: 0.7;
+}
+.wp-block-yuna-about-me .pic .simpleParallax {
+  width: 100%;
+  height: 100%;
+  border-radius: 3px;
+}
+.wp-block-yuna-about-me .pic img {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 3px;
+  box-shadow: 1px 1px 3px 4px rgba(0, 0, 0, 0.2);
+}
+.wp-block-yuna-about-me .text p {
+  margin-bottom: 15px;
+}
+.wp-block-yuna-about-me .text p:last-child {
+  margin-bottom: 0;
+}
+@media (max-width: 992px) {
+  .wp-block-yuna-about-me .pic-wrapper {
+    margin-bottom: 50px;
+  }
+}
+.wp-block-yuna-about-me .button {
+  margin-top: 50px;
+}
+@media (max-width: 992px) {
+  .wp-block-yuna-about-me .button {
+    margin-top: 30px;
+  }
+}
+
+/*# sourceMappingURL=style-index.css.map*/

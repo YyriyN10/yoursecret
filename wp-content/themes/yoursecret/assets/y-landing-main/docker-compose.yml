@@ -1,0 +1,56 @@
+version: '3'
+
+services:
+  postgres:
+    image: 'postgres:15'
+    ports:
+      - "${PG_PORT}:5432"
+    restart: always
+    environment:
+      POSTGRES_USER: ${PG_USER}
+      POSTGRES_PASSWORD: ${PG_PASS}
+      POSTGRES_DB: ${PG_DB_NAME}
+    deploy:
+      mode: replicated
+      replicas: 1
+    networks:
+      - app
+    volumes:
+      - ./db-data/postgres/:/var/lib/postgresql/data/
+
+  redis:
+    networks:
+      - app
+    image: 'redis:alpine'
+    ports:
+      - "${RD_PORT}:6379"
+    restart: always
+
+  pc:
+    build:
+      context: .
+      dockerfile: ./pc.dockerfile
+    environment:
+      - PORT=80
+      - PG_HOST=postgres
+      - PG_PORT=5432
+      - PG_USER=${PG_USER}
+      - PG_PASS=${PG_PASS}
+      - PG_DB_NAME=${PG_DB_NAME}
+      - RD_HOST=redis
+      - RD_PORT=6379
+    restart: always
+    networks:
+      - app
+    ports:
+      - "${PORT}:80"
+    deploy:
+      mode: replicated
+      replicas: 1
+    depends_on:
+      - postgres
+      - redis
+
+networks:
+  app:
+

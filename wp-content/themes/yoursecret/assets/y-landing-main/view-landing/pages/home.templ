@@ -1,0 +1,141 @@
+package pages
+
+import (
+	"y-landing/view-landing/components"
+	"y-landing/view-landing/layout"
+)
+
+templ Home() {
+	@layout.Base("YourSecret – thoughts, closer than ever!", "YourSecret is an anonymous social platform to share your thoughts, secrets, and emotions safely. Discover your identity, unlock your mask, and connect with like-minded souls.") {
+		<!-- Page Header -->
+		<header class="page-header-ui page-header-ui-dark bg-img-repeat bg-white" style="background-image: url('assets/img/backgrounds/pattern-shapes.png'); padding-top: 0; padding-bottom: 0;">
+			<div class="page-header-ui-content">
+				<div class="container px-4">
+					<div class="row gx-4 align-items-center">
+ 					<div class="col-lg-6 col-md-6 col-12">
+							<img src="/static/assets/img/mainimg2.png" alt="YourSecret main image" class="img-fluid mb-3 mb-lg-0 no-border-mobile"/>
+						</div>
+						<div class="col-lg-5 col-md-6 col-12 d-flex justify-content-center">
+							<div class="text-dark responsive-form-container">
+								<div class="card-body p-4 p-md-4 p-sm-3">
+									<form>
+										<div class="mb-3">
+											<label class="mb-2 login-form-label" for="emailInput">Email or username</label>
+											<input
+												class="form-control rounded-2 login-form-input"
+												id="emailInput"
+												type="text"
+												placeholder="somemail@gmail.com"
+												disabled
+											/>
+										</div>
+										<div class="mb-3">
+											<div class="d-flex justify-content-between align-items-center mb-2">
+												<label class="login-form-label" for="passwordInput">Password</label>
+												<a href="javascript:void(0)"
+                                                   												onclick="openEarlyAccessModal()" class="text-right text-decoration-none login-forgot-password">Forgot your password?</a>
+											</div>
+											<div class="position-relative">
+												<input
+													class="form-control rounded-2 login-form-input-with-icon"
+													id="passwordInput"
+													type="password"
+													placeholder="Password"
+													disabled
+												/>
+												<button
+													type="button"
+													class="btn btn-link position-absolute end-0 top-50 translate-middle-y pe-3 ps-0 border-0"
+													disabled
+												>
+													<i class="fa-solid fa-eye-slash" style="color: black"></i>
+												</button>
+											</div>
+										</div>
+										<div class="d-grid mt-4">
+											<button
+												class="rounded-pill fw-500 border-0 login-signin-button"
+												type="submit"
+												disabled
+											>
+												Sign in
+											</button>
+										</div>
+										<div class="text-center" style="padding-top: 24px;">
+											<a
+												href="javascript:void(0)"
+												onclick="openEarlyAccessModal()"
+												class="text-primary text-decoration-none fw-500 login-create-account"
+											>
+												Create new account
+											</a>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+		<script src="https://cdn.jsdelivr.net/npm/validator@13.9.0/validator.min.js"></script>
+		<script>
+            function openEarlyAccessModal() {
+                Swal.fire({
+                    title: 'Get Early Access to YourSecret',
+                    html: `
+                        <p style="margin-bottom: 1rem;">
+                            🔓 A new kind of space is coming — where masks speak, minds connect, and your truth matters.<br>
+                            Leave your email to be part of the very first wave.
+                        </p>
+                        <input type="email" id="earlyAccessEmail" class="swal2-input" placeholder="Enter your email address">
+                    `,
+                    confirmButtonText: 'Join now',
+                    showCancelButton: false,
+                    focusConfirm: false,
+                    preConfirm: () => {
+                        const email = document.getElementById('earlyAccessEmail').value;
+                        if (!validateEmail(email)) {
+                            Swal.showValidationMessage('Please enter a valid email address');
+                            return false;
+                        }
+
+                        return fetchRequest(email).then(() => email);
+                    }
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        Swal.fire({
+                            title: '✅ You’re in!',
+                            text: 'Thanks! We’ll notify you when we launch. You’re now on the secret list.',
+                            icon: 'success',
+                            showConfirmButton: false,
+                            timer: 2000
+                        });
+                    }
+                });
+            }
+
+            function validateEmail(email) {
+                return validator.isEmail(email);
+            }
+
+            function fetchRequest(email) {
+                const formData = new URLSearchParams();
+                formData.append("email", email);
+
+                fetch("/subscribe", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/x-www-form-urlencoded"
+                    },
+                    body: formData.toString()
+                });
+
+                return Promise.resolve();
+            }
+
+        </script>
+		@components.CookiesBar()
+	}
+}

@@ -1,0 +1,168 @@
+/*!***************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/yuna-car-service-why-we/style.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************************************/
+@charset "UTF-8";
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.wp-block-yuna-car-service-why-we {
+  background-color: var(--color-soft-black);
+}
+.wp-block-yuna-car-service-why-we .text-content {
+  padding-top: 105px;
+  padding-bottom: 105px;
+}
+@media (max-width: 1200px) {
+  .wp-block-yuna-car-service-why-we .text-content {
+    padding-top: 95px;
+    padding-bottom: 95px;
+  }
+}
+@media (max-width: 992px) {
+  .wp-block-yuna-car-service-why-we .text-content {
+    padding-top: 85px;
+    padding-bottom: 85px;
+  }
+}
+.wp-block-yuna-car-service-why-we .block-name {
+  color: var(--color-gray);
+}
+.wp-block-yuna-car-service-why-we .block-title {
+  margin-bottom: 8px;
+}
+.wp-block-yuna-car-service-why-we .text {
+  margin-bottom: 16px;
+  color: var(--color-gray);
+}
+.wp-block-yuna-car-service-why-we .text p {
+  margin-bottom: 8px;
+}
+.wp-block-yuna-car-service-why-we .text p:last-child {
+  margin-bottom: 0;
+}
+.wp-block-yuna-car-service-why-we .advantages-list {
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 12px;
+  color: var(--color-gray);
+}
+.wp-block-yuna-car-service-why-we .advantages-list li {
+  list-style: none;
+  position: relative;
+  padding-right: 48px;
+  font-size: 14px;
+}
+.wp-block-yuna-car-service-why-we .advantages-list li:before {
+  content: "✔";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid var(--color-red);
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--color-red);
+  text-align: center;
+}
+.wp-block-yuna-car-service-why-we .button {
+  margin-top: 32px;
+}
+.wp-block-yuna-car-service-why-we .images-wrapper {
+  position: relative;
+}
+.wp-block-yuna-car-service-why-we .images-wrapper .experience {
+  position: absolute;
+  z-index: 2;
+  top: -32px;
+  left: -16px;
+  border-radius: 15px;
+  background-color: var(--color-red);
+  padding: 12px 24px;
+  text-align: center;
+}
+@media (max-width: 575px) {
+  .wp-block-yuna-car-service-why-we .images-wrapper .experience {
+    left: 0;
+  }
+}
+.wp-block-yuna-car-service-why-we .images-wrapper .experience .number {
+  font-weight: 700;
+  font-size: 64px;
+  color: var(--color-white);
+  line-height: 1.1;
+  margin-bottom: 8px;
+}
+@media (max-width: 1200px) {
+  .wp-block-yuna-car-service-why-we .images-wrapper .experience .number {
+    font-size: 58px;
+  }
+}
+@media (max-width: 767px) {
+  .wp-block-yuna-car-service-why-we .images-wrapper .experience .number {
+    font-size: 52px;
+  }
+}
+@media (max-width: 440px) {
+  .wp-block-yuna-car-service-why-we .images-wrapper .experience .number {
+    font-size: 11vw;
+  }
+}
+.wp-block-yuna-car-service-why-we .images-wrapper .experience .description {
+  margin-bottom: 0;
+}
+.wp-block-yuna-car-service-why-we .pic-wrapper {
+  overflow: hidden;
+  border-radius: 15px;
+}
+.wp-block-yuna-car-service-why-we .pic-wrapper.big-pic {
+  width: 85%;
+  margin-right: auto;
+  position: relative;
+  z-index: 1;
+  height: 100%;
+}
+@media (max-width: 992px) {
+  .wp-block-yuna-car-service-why-we .pic-wrapper.big-pic {
+    width: 95%;
+  }
+}
+@media (max-width: 767px) {
+  .wp-block-yuna-car-service-why-we .pic-wrapper.big-pic {
+    height: auto;
+    width: 80%;
+    padding-bottom: 60%;
+  }
+}
+@media (max-width: 575px) {
+  .wp-block-yuna-car-service-why-we .pic-wrapper.big-pic {
+    margin-left: 16px;
+  }
+}
+.wp-block-yuna-car-service-why-we .pic-wrapper.small-pic {
+  position: absolute;
+  z-index: 2;
+  width: 35.7%;
+  padding-bottom: 35.7%;
+  right: -16px;
+  bottom: -32px;
+}
+@media (max-width: 992px) {
+  .wp-block-yuna-car-service-why-we .pic-wrapper.small-pic {
+    width: 40%;
+    padding-bottom: 40%;
+  }
+}
+@media (max-width: 575px) {
+  .wp-block-yuna-car-service-why-we .pic-wrapper.small-pic {
+    right: 0;
+  }
+}
+.wp-block-yuna-car-service-why-we .pic-wrapper img {
+  position: absolute;
+  inset: 0;
+}

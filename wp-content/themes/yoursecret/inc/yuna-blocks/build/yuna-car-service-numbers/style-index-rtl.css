@@ -1,0 +1,66 @@
+/*!****************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/yuna-car-service-numbers/style.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.wp-block-yuna-car-service-numbers {
+  background-color: var(--color-red);
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.wp-block-yuna-car-service-numbers .numbers-list {
+  row-gap: 24px;
+  margin: 0;
+}
+.wp-block-yuna-car-service-numbers .numbers-list .item {
+  width: 25%;
+  border-right: 1px solid var(--color-white);
+  padding: 0 16px;
+}
+@media (max-width: 992px) {
+  .wp-block-yuna-car-service-numbers .numbers-list .item {
+    width: 50%;
+  }
+  .wp-block-yuna-car-service-numbers .numbers-list .item:nth-child(3), .wp-block-yuna-car-service-numbers .numbers-list .item:nth-child(6) {
+    border-right: none;
+  }
+}
+@media (max-width: 440px) {
+  .wp-block-yuna-car-service-numbers .numbers-list .item {
+    padding: 0 12px;
+  }
+}
+.wp-block-yuna-car-service-numbers .numbers-list .item .number {
+  margin-bottom: 16px;
+  color: var(--color-white);
+  font-family: var(--font-inter);
+  font-weight: 600;
+  line-height: 1.1;
+  font-size: 64px;
+}
+@media (max-width: 1200px) {
+  .wp-block-yuna-car-service-numbers .numbers-list .item .number {
+    font-size: 58px;
+  }
+}
+@media (max-width: 767px) {
+  .wp-block-yuna-car-service-numbers .numbers-list .item .number {
+    font-size: 52px;
+  }
+}
+@media (max-width: 440px) {
+  .wp-block-yuna-car-service-numbers .numbers-list .item .number {
+    font-size: 11vw;
+  }
+}
+.wp-block-yuna-car-service-numbers .numbers-list .item .description {
+  margin-bottom: 0;
+  color: var(--color-soft-gray);
+}
+.wp-block-yuna-car-service-numbers .numbers-list .item:first-child, .wp-block-yuna-car-service-numbers .numbers-list .item:nth-child(5), .wp-block-yuna-car-service-numbers .numbers-list .item:nth-child(9) {
+  border-right: none;
+}

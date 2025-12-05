@@ -1,0 +1,63 @@
+package pages
+import (
+    "y-landing/view-landing/layout"
+)
+
+templ Delete() {
+    @layout.Base("Account Deletion & Data Erasure Policy", "") {
+        <section class="py-10">
+            <div class="container px-5">
+                <div class="row gx-5 justify-content-center">
+                <div class="col-lg-10">
+                    <h2 class="mb-4">Account Deletion & Data Erasure Policy</h2>
+                    <p>YourSecret is committed to respecting your privacy and giving you control over your personal data. As part of this commitment, users have the right to request complete deletion of their account and all associated personal information.</p>
+
+                    <hr class="my-5" />
+                    <h4 class="mb-4">
+                    <div class="icon-stack bg-primary text-white me-2"><i data-feather="arrow-right"></i></div>
+                    What This Means
+                    </h4>
+                    <p>When you submit a deletion request:</p>
+                    <ul>
+                    <li>Your account will be permanently removed from our systems.</li>
+                    <li>All personal data associated with your account will be securely deleted.</li>
+                    <li>Any content you've created that contains personal identifiers will also be erased where applicable.</li>
+                    </ul>
+
+                    <hr class="my-5" />
+                    <h4 class="mb-4">
+                    <div class="icon-stack bg-primary text-white me-2"><i data-feather="arrow-right"></i></div>
+                    How to Request Deletion
+                    </h4>
+                    <p>To request account and data deletion, please follow these steps:</p>
+                    <div class="card bg-light shadow-none mb-4">
+                    <div class="card-body">
+                        <ul class="mb-0">
+                        <li class="text-italic">Send an email to <strong>privacy@yoursecret.org</strong> with the subject line: “Account Deletion Request”.</li>
+                        <li class="text-italic">Include the email address or username associated with your account.</li>
+                        <li class="text-italic">You may be asked to verify your identity for security purposes.</li>
+                        </ul>
+                    </div>
+                    </div>
+
+                    <hr class="my-5" />
+                    <h4 class="mb-4">
+                    <div class="icon-stack bg-primary text-white me-2"><i data-feather="arrow-right"></i></div>
+                    Important Notes
+                    </h4>
+                    <p>Please keep in mind:</p>
+                    <ul>
+                    <li>Once deletion is complete, the action is irreversible.</li>
+                    <li>Some anonymized or aggregated data may be retained for legal or analytical purposes, but it will no longer be linked to your identity.</li>
+                    <li>You will lose access to all features and content associated with your account.</li>
+                    </ul>
+
+                    <hr class="my-5" />
+                    <h4>Need Help?</h4>
+                    <p>If you have questions about this process or your privacy rights, feel free to reach out at <strong>privacy@yoursecret.org</strong>.</p>
+                </div>
+                </div>
+            </div>
+            </section>
+    }
+}

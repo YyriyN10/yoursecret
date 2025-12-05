@@ -1,0 +1,26 @@
+package components
+
+import "y-landing/models"
+
+templ Messages(data *models.TemplateData){
+    if data.Flash != "" {
+         <div class="alert alert-success alert-dismissible fade show" role="alert">
+            { data.Flash }
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+         </div>
+    }
+
+    if data.Error != "" {
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            { data.Error }
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+
+    if data.Warning != "" {
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            { data.Warning }
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+}

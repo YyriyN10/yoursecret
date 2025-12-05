@@ -1,0 +1,142 @@
+/*!*************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/yuna-car-service-blog/style.scss ***!
+  \*************************************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.wp-block-yuna-car-service-blog {
+  background-color: var(--color-black);
+}
+.wp-block-yuna-car-service-blog .block-name {
+  color: var(--color-gray);
+}
+.wp-block-yuna-car-service-blog .block-title {
+  margin-bottom: 80px;
+}
+@media (max-width: 1200px) {
+  .wp-block-yuna-car-service-blog .block-title {
+    margin-bottom: 70px;
+  }
+}
+@media (max-width: 992px) {
+  .wp-block-yuna-car-service-blog .block-title {
+    margin-bottom: 24px;
+  }
+}
+.wp-block-yuna-car-service-blog .text {
+  color: var(--color-gray);
+}
+@media (max-width: 992px) {
+  .wp-block-yuna-car-service-blog .text {
+    margin-bottom: 70px;
+  }
+}
+@media (max-width: 767px) {
+  .wp-block-yuna-car-service-blog .text {
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 440px) {
+  .wp-block-yuna-car-service-blog .text {
+    margin-bottom: 50px;
+  }
+}
+.wp-block-yuna-car-service-blog .text p {
+  margin-bottom: 8px;
+}
+.wp-block-yuna-car-service-blog .text p:last-child {
+  margin-bottom: 0;
+}
+.wp-block-yuna-car-service-blog .content {
+  row-gap: 24px;
+  justify-content: center;
+}
+.wp-block-yuna-car-service-blog .blog-item span {
+  display: block;
+}
+.wp-block-yuna-car-service-blog .blog-item .inner {
+  border-radius: 15px;
+  overflow: hidden;
+  padding-bottom: 16px;
+  background-color: var(--color-white);
+  position: relative;
+  height: 100%;
+}
+@media (max-width: 767px) {
+  .wp-block-yuna-car-service-blog .blog-item .inner {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 440px) {
+  .wp-block-yuna-car-service-blog .blog-item .inner {
+    width: calc(100% - 32px);
+  }
+}
+.wp-block-yuna-car-service-blog .blog-item .date {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  border-radius: 4px;
+  background-color: var(--color-soft-red);
+  padding: 5px 10px;
+  color: var(--color-white);
+  font-size: 12px;
+  z-index: 2;
+}
+.wp-block-yuna-car-service-blog .blog-item .image-wrapper {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  padding-bottom: 80%;
+  margin-bottom: 24px;
+  overflow: hidden;
+}
+.wp-block-yuna-car-service-blog .blog-item .image-wrapper img {
+  position: absolute;
+  inset: 0;
+  transition: all 0.3s;
+}
+.wp-block-yuna-car-service-blog .blog-item .name {
+  margin-bottom: 16px;
+  color: var(--color-black);
+  padding: 0 12px;
+  font-size: 20px;
+  transition: all 0.3s;
+}
+@media (max-width: 1200px) {
+  .wp-block-yuna-car-service-blog .blog-item .name {
+    font-size: 18px;
+  }
+}
+@media (max-width: 767px) {
+  .wp-block-yuna-car-service-blog .blog-item .name {
+    font-size: 20px;
+  }
+}
+@media (max-width: 440px) {
+  .wp-block-yuna-car-service-blog .blog-item .name {
+    font-size: 18px;
+  }
+}
+.wp-block-yuna-car-service-blog .blog-item .description {
+  color: var(--color-gray) !important;
+  padding: 0 12px;
+  font-size: 16px;
+}
+@media (max-width: 440px) {
+  .wp-block-yuna-car-service-blog .blog-item .description {
+    font-size: 14px;
+  }
+}
+.wp-block-yuna-car-service-blog .blog-item:hover .image-wrapper img {
+  transform: scale(1.2);
+}
+.wp-block-yuna-car-service-blog .blog-item:hover .name {
+  color: var(--color-soft-red);
+}
+
+/*# sourceMappingURL=style-index.css.map*/

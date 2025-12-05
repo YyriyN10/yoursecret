@@ -1,0 +1,60 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-yuna-yuna-clining-clients {
+  background-color: var(--color-white);
+
+  .block-title{
+    color: var(--color-black);
+  }
+
+  .text{
+    margin-top: 20px;
+  }
+
+  .slider-wrapper{
+    margin-top: 30px;
+    padding-left: 0;
+    padding-right: 0;
+
+    .slick-track{
+      display: flex;
+    }
+
+    .slide{
+      margin: 10px 15px;
+      display: flex;
+      align-items: center;
+      padding: 30px;
+      background-color: var(--color-white);
+      box-shadow: 0 0 10px 0 var(--color-gray);
+      height: auto;
+      border-radius: 12px;
+
+      @media(max-width: 440px){
+        padding: 15px;
+      }
+
+      img{
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .slick-dots{
+      padding-left: 15px;
+
+      li{
+        background-color: var(--color-gray);
+
+        &.slick-active{
+          background-color: var(--color-accent);
+        }
+      }
+    }
+  }
+}

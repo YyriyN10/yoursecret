@@ -1,0 +1,52 @@
+/*!*********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/yuna-car-service-blog-content/style.scss ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.wp-block-yuna-car-service-blog-content {
+  background-color: var(--color-soft-black);
+}
+.wp-block-yuna-car-service-blog-content h2 {
+  font-size: 32px;
+  font-weight: 500;
+}
+.wp-block-yuna-car-service-blog-content h3 {
+  font-size: 28px;
+  font-weight: 500;
+}
+.wp-block-yuna-car-service-blog-content h4 {
+  font-size: 24px;
+  font-weight: 500;
+}
+.wp-block-yuna-car-service-blog-content h5 {
+  font-size: 20px;
+  font-weight: 500;
+}
+.wp-block-yuna-car-service-blog-content h6 {
+  font-size: 16px;
+  font-weight: 500;
+}
+.wp-block-yuna-car-service-blog-content p,
+.wp-block-yuna-car-service-blog-content li {
+  color: var(--color-gray);
+  float: inside;
+}
+.wp-block-yuna-car-service-blog-content a {
+  color: var(--color-soft-red) !important;
+  transition: all 0.3s;
+}
+.wp-block-yuna-car-service-blog-content a:hover {
+  color: var(--color-red) !important;
+}
+.wp-block-yuna-car-service-blog-content ul,
+.wp-block-yuna-car-service-blog-content ol {
+  margin-right: 0;
+}
+.wp-block-yuna-car-service-blog-content .wp-block-image {
+  border-radius: 15px;
+  overflow: hidden;
+}

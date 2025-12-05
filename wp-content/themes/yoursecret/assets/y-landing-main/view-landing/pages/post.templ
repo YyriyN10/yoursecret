@@ -1,0 +1,46 @@
+package pages
+
+import (
+	"fmt"
+	"strings"
+	"y-landing/models"
+	"y-landing/view-landing/layout"
+)
+
+templ Post(post models.PostData, page string) {
+	@layout.Base(post.Title, "") {
+		<section class="py-5 bg-light">
+			<div class="container">
+				<p class="mb-4 text-muted">
+                	<a href={ templ.URL(fmt.Sprintf("/%s", strings.ToLower(page))) }>{ page }</a>
+                	<span class="mx-1">-</span>
+                	<a href={ templ.URL(fmt.Sprintf("/%s/%s", strings.ToLower(page), post.CategorySlug)) }>{ post.CategoryName }</a>
+                	<span class="mx-1">-</span>
+                	<span>{ post.Title }</span>
+                </p>
+
+				<div class="row justify-content-center">
+					<div class="col-lg-10">
+						<article class="bg-white p-4 p-md-5 rounded shadow-sm">
+							<header class="mb-4">
+								<h1 class="fw-bold display-5 mb-3">{ post.Title }</h1>
+								<div class="text-muted small">{ post.Format(post.CreatedAt) }</div>
+							</header>
+							if post.ImageLink != "" {
+								<img
+									src={ post.ImageLink }
+									alt={ post.Title }
+									class="img-fluid rounded mb-4 w-100"
+									style="object-fit: cover; max-height: 450px;"
+								/>
+							}
+							<section class="news-body lh-lg fs-5">
+								@templ.Raw(post.FullText)
+							</section>
+						</article>
+					</div>
+				</div>
+			</div>
+		</section>
+	}
+}

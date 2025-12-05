@@ -1,0 +1,194 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-yuna-car-service-blog-list {
+  background-color: var(--color-black);
+
+  .content{
+    row-gap: 24px;
+    justify-content: center;
+  }
+
+  .blog-item{
+    span{
+      display: block;
+    }
+
+    .inner{
+      border-radius: 15px;
+      overflow: hidden;
+      padding-bottom: 16px;
+      background-color: var(--color-black);
+      position: relative;
+      height: 100%;
+
+      @media(max-width: 767px){
+        width: 80%;
+        margin: 0 auto;
+      }
+
+      @media(max-width: 440px){
+        width: calc(100% - 32px);
+      }
+    }
+
+    .date{
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      border-radius: 4px;
+      background-color: var(--color-soft-red);
+      padding: 5px 10px;
+      color: var(--color-white);
+      font-size: 12px;
+      z-index: 2;
+    }
+
+    .image-wrapper{
+      position: relative;
+      border-radius: 15px;
+      z-index: 1;
+      width: 100%;
+      padding-bottom: 56.25%;
+      margin-bottom: 24px;
+      overflow: hidden;
+
+      img{
+        position: absolute;
+        inset: 0;
+        transition: all 0.3s;
+      }
+    }
+
+    .name{
+      margin-bottom: 16px;
+      color: var(--color-white);
+      font-size: 20px;
+      transition: all 0.3s;
+
+      @media(max-width: 1200px){
+        font-size: 18px;
+      }
+
+      @media(max-width: 767px){
+        font-size: 20px;
+      }
+
+      @media(max-width: 440px){
+        font-size: 18px;
+      }
+    }
+
+    .description{
+      color: var(--color-gray) !important;
+      font-size: 16px;
+
+      @media(max-width: 440px){
+        font-size: 14px;
+      }
+    }
+
+    &:hover{
+      .image-wrapper{
+        img{
+          transform: scale(1.2);
+        }
+      }
+
+      .name{
+        color: var(--color-soft-red);
+      }
+    }
+  }
+
+  .pagination-wrapper{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .pagination-control{
+      font-size: 0;
+      color: rgba(0,0,0,0);
+      width: 36px;
+
+      @media(max-width: 440px){
+        width: 24px;
+      }
+
+      &.disable{
+        pointer-events: none;
+      }
+
+      svg{
+        width: 100%;
+        height: auto;
+
+        path{
+          transition: 0.3s;
+        }
+      }
+
+      &:hover{
+        svg{
+          path{
+            fill: var(--color-soft-red);
+          }
+        }
+      }
+    }
+
+
+    ul{
+      display: flex;
+      justify-content: center;
+      margin: 0 32px;
+      padding: 0;
+      align-items: center;
+      gap: 8px;
+
+      @media(max-width: 440px){
+        margin: 0 24px;
+      }
+
+      li{
+        list-style: none;
+
+        .page-numbers{
+          border-radius: 8px;
+          display: block;
+          width: 32px;
+          height: 32px;
+          text-align: center;
+          line-height: 32px;
+          color: var(--color-white) !important;
+          transition: all 0.3s;
+          font-size: 16px;
+          font-family: var(--font-manrope);
+          font-weight: 700;
+          background-color: var(--color-gray);
+
+          @media(max-width: 440px){
+            font-size: 14px;
+            width: 26px;
+            height: 26px;
+            line-height: 26px;
+          }
+
+          &:hover{
+            opacity: 0.8;
+          }
+
+          &.current{
+            background-color: var(--color-soft-red);
+            opacity: 1 !important;
+          }
+        }
+      }
+    }
+  }
+}

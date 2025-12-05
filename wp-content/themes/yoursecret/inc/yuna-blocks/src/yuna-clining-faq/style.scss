@@ -1,0 +1,137 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-yuna-yuna-clining-faq {
+  background-color: var(--color-white);
+
+  .block-title{
+    color: var(--color-black);
+    margin-bottom: 0;
+  }
+
+  .text{
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  .accordion-faq{
+    display: grid;
+    gap: 30px;
+
+    .card{
+      border-radius: 24px;
+      border: 1px solid var(--color-accent);
+      -webkit-box-shadow: 0 0 20px 1px rgba(0,0,0,0.1);
+      box-shadow: 0 0 20px 1px rgba(0,0,0,0.1);
+
+
+      .card-header{
+        .btn{
+          padding: 30px 90px 15px 30px;
+          position: relative;
+          color: var(--color-black) !important;
+          font-weight: 500;
+          font-size: 24px;
+          line-height: 1.2;
+          letter-spacing: -0.01em;
+
+          @media(max-width: 1200px){
+            font-size: 22px;
+          }
+
+          @media(max-width: 767px){
+            font-size: 20px;
+          }
+
+          @media(max-width: 440px){
+            font-size: 18px;
+            padding: 20px 60px 10px 20px;
+          }
+
+          .indicator{
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            right: 30px;
+            top: 50%;
+            transform: translateY(-50%);
+
+            @media(max-width: 440px){
+              width: 20px;
+              height: 20px;
+              right: 20px;
+            }
+
+            &:before,
+            &:after{
+              position: absolute;
+              content: '';
+              left: 0;
+              right: 0;
+              top: 50%;
+              transform: translateY(-50%);
+              transform-origin: center;
+              height: 2px;
+              width: 100%;
+              background: var(--color-accent);
+              transition: all 0.3s;
+            }
+
+            &:after{
+              transform: rotate(0deg);
+            }
+
+          }
+
+          &.collapsed{
+            padding-bottom: 30px;
+
+            @media(max-width: 440px){
+              padding-bottom: 20px;
+            }
+
+            .indicator{
+              &:before,
+              &:after{
+                background: var(--color-gray);
+              }
+
+              &:after{
+                transform: rotate(90deg);
+              }
+            }
+          }
+        }
+      }
+
+      .card-body{
+        padding: 0 30px 30px 30px;
+        @media(max-width: 440px){
+          padding: 0 20px 20px 20px;
+        }
+        /*padding: 0 90px 30px 30px;
+
+        @media(max-width: 440px){
+          padding: 0 60px 20px 20px;
+        }*/
+
+        p{
+          margin-bottom: 8px;
+
+          &:last-child{
+            margin-bottom: 0;
+          }
+        }
+
+        ul,
+        ol{
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}

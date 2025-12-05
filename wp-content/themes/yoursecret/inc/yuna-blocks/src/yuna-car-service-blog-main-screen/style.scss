@@ -1,0 +1,41 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+
+.wp-block-yuna-car-service-blog-main-screen{
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 155px;
+  padding-bottom: 155px;
+  color: var(--color-white);
+
+  @media(max-width: 440px){
+    padding-top: 140px;
+    padding-bottom: 140px;
+  }
+
+  &:after{
+    position: absolute;
+    content: '';
+    inset: 0;
+    background-color: var(--color-black);
+    opacity: 0.6;
+    z-index: 1;
+  }
+
+  .container{
+    position: relative;
+    z-index: 3;
+  }
+
+  .page-title{
+    margin-bottom: 0;
+  }
+
+}

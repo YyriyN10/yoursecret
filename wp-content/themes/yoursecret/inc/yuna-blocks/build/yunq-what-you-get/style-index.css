@@ -1,0 +1,106 @@
+/*!*********************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/yunq-what-you-get/style.scss ***!
+  \*********************************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.wp-block-yuna-what-you-get {
+  background-position: center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+  position: relative;
+  color: var(--color-light);
+}
+.wp-block-yuna-what-you-get:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--color-dark);
+  opacity: 0.8;
+  z-index: 1;
+}
+.wp-block-yuna-what-you-get .container-fluid {
+  position: relative;
+  z-index: 2;
+}
+.wp-block-yuna-what-you-get .block-title {
+  margin-bottom: 55px;
+}
+.wp-block-yuna-what-you-get .content {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+.wp-block-yuna-what-you-get .item {
+  padding: 30px;
+  list-style: none;
+  border-radius: 3px;
+  width: calc(22% - 15px);
+  background-color: rgba(255, 236, 230, 0.1);
+  backdrop-filter: blur(15px);
+}
+@media (max-width: 1400px) {
+  .wp-block-yuna-what-you-get .item {
+    width: calc(30% - 15px);
+  }
+}
+@media (max-width: 1100px) {
+  .wp-block-yuna-what-you-get .item {
+    padding: 30px 15px;
+  }
+}
+@media (max-width: 992px) {
+  .wp-block-yuna-what-you-get .item {
+    width: calc(50% - 15px);
+  }
+}
+@media (max-width: 575px) {
+  .wp-block-yuna-what-you-get .item {
+    width: 100%;
+  }
+}
+.wp-block-yuna-what-you-get .item .icon {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+}
+.wp-block-yuna-what-you-get .item .icon .svg-pic,
+.wp-block-yuna-what-you-get .item .icon svg {
+  height: 70px;
+  width: auto;
+  opacity: 0.8;
+}
+@media (max-width: 767px) {
+  .wp-block-yuna-what-you-get .item .icon .svg-pic,
+  .wp-block-yuna-what-you-get .item .icon svg {
+    height: 60px;
+  }
+}
+@media (max-width: 575px) {
+  .wp-block-yuna-what-you-get .item .icon .svg-pic,
+  .wp-block-yuna-what-you-get .item .icon svg {
+    height: 50px;
+  }
+}
+.wp-block-yuna-what-you-get .item .icon .svg-pic path,
+.wp-block-yuna-what-you-get .item .icon svg path {
+  fill: var(--color-light);
+}
+.wp-block-yuna-what-you-get .item .text {
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 16px;
+}
+@media (max-width: 767px) {
+  .wp-block-yuna-what-you-get .item .text {
+    font-size: 14px;
+  }
+}
+
+/*# sourceMappingURL=style-index.css.map*/

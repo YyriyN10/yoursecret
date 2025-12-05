@@ -1,0 +1,43 @@
+package pages
+
+import (
+    "fmt"
+    "y-landing/view-admin/layout"
+    "y-landing/models"
+    "y-landing/constants"
+    )
+
+templ ChangePass(data *models.TemplateData, userID int) {
+    @layout.Base("Change Password", data) {
+        <h1 class="h3 mb-2 text-gray-800">Change Password</h1>
+        <p class="mb-4">All fields are required</p>
+
+        <div class="card shadow mb-4">
+            <div class="card-body">
+                <div class="table-responsive">
+                    <form method="POST" action={ templ.URL(fmt.Sprintf("/users/%d/edit-pass", userID)) } class="user">
+                        if data.UserRole != constants.AdminRole {
+                                <div class="">
+                                    <label for="old_pass" class="form-label">Old Password</label><br>
+                                    <input type="password" name="old_pass" id="old_pass" class="form-control" required><br>
+                                </div>
+                            }
+                            <div class="">
+                                <label for="new_pass1" class="form-label">New Password</label><br>
+                                <input type="password" name="new_pass1" id="new_pass1" class="form-control" required><br>
+                            </div>
+                            <div class="">
+                                <label for="new_pass_2" class="form-label">Repeat New Password</label><br>
+                                <input type="password" name="new_pass_2" id="new_pass_2" class="form-control" required><br>
+                            </div>
+                        <br>
+                        <button type="submit" class="btn btn-primary btn-user btn-block">
+                            Save Changes
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    }
+}

@@ -1,0 +1,23 @@
+ALTER TABLE news_posts
+    ALTER COLUMN title DROP NOT NULL,
+    ALTER COLUMN image_link DROP NOT NULL,
+    ALTER COLUMN short_text DROP NOT NULL,
+    ALTER COLUMN full_text DROP NOT NULL,
+    ALTER COLUMN created_at DROP NOT NULL,
+    ALTER COLUMN updated_at DROP NOT NULL;
+
+ALTER TABLE news_posts
+    ALTER COLUMN created_at DROP DEFAULT,
+    ALTER COLUMN updated_at DROP DEFAULT;
+
+ALTER TABLE blog_posts
+    ALTER COLUMN title DROP NOT NULL,
+    ALTER COLUMN image_link DROP NOT NULL,
+    ALTER COLUMN short_text DROP NOT NULL,
+    ALTER COLUMN full_text DROP NOT NULL,
+    ALTER COLUMN created_at DROP NOT NULL,
+    ALTER COLUMN updated_at DROP NOT NULL;
+
+ALTER TABLE blog_posts
+    ALTER COLUMN created_at DROP DEFAULT,
+    ALTER COLUMN updated_at DROP DEFAULT;

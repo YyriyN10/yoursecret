@@ -1,0 +1,48 @@
+/*!********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/yuna-car-service-breadcrumbs/style.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.wp-block-yuna-car-service-breadcrumbs {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  background-color: var(--color-soft-black);
+}
+.wp-block-yuna-car-service-breadcrumbs .breadcrumbs-list {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.wp-block-yuna-car-service-breadcrumbs .breadcrumbs-list .crumb {
+  list-style: none;
+  display: flex;
+  gap: 5px;
+  font-size: 14px;
+  align-items: center;
+  color: var(--color-gray);
+}
+.wp-block-yuna-car-service-breadcrumbs .breadcrumbs-list .crumb a {
+  color: var(--color-gray) !important;
+  transition: all 0.3s;
+}
+.wp-block-yuna-car-service-breadcrumbs .breadcrumbs-list .crumb a:hover {
+  color: var(--color-soft-red) !important;
+}
+.wp-block-yuna-car-service-breadcrumbs .breadcrumbs-list .crumb svg {
+  width: 16px;
+  height: auto;
+}
+.wp-block-yuna-car-service-breadcrumbs .breadcrumbs-list .crumb svg path {
+  stroke: var(--color-gray);
+}
+.wp-block-yuna-car-service-breadcrumbs .breadcrumbs-list .crumb.current-crumb {
+  font-weight: 500;
+  color: var(--color-white);
+}
+
+/*# sourceMappingURL=style-index.css.map*/

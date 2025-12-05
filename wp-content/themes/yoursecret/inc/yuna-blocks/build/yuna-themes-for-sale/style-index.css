@@ -1,0 +1,190 @@
+/*!************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/yuna-themes-for-sale/style.scss ***!
+  \************************************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.wp-block-yuna-themes-for-sail {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+}
+.wp-block-yuna-themes-for-sail .block-title {
+  margin-bottom: 35px;
+}
+.wp-block-yuna-themes-for-sail .text {
+  margin-bottom: 55px;
+  -moz-column-count: 2;
+       column-count: 2;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+@media (max-width: 767px) {
+  .wp-block-yuna-themes-for-sail .text {
+    -moz-column-count: 1;
+         column-count: 1;
+  }
+}
+.wp-block-yuna-themes-for-sail .text p {
+  margin-bottom: 10px;
+}
+.wp-block-yuna-themes-for-sail .text p:last-child {
+  margin-bottom: 0;
+}
+.wp-block-yuna-themes-for-sail .content {
+  display: flex;
+  flex-wrap: wrap;
+}
+.wp-block-yuna-themes-for-sail .content .item {
+  width: 33.33%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  perspective: 700px;
+  height: 20vw;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
+}
+@media (max-width: 1440px) {
+  .wp-block-yuna-themes-for-sail .content .item {
+    width: 50%;
+    height: 30vw;
+  }
+}
+@media (max-width: 992px) {
+  .wp-block-yuna-themes-for-sail .content .item {
+    height: 40vw;
+  }
+}
+@media (max-width: 767px) {
+  .wp-block-yuna-themes-for-sail .content .item {
+    height: 60vw;
+  }
+}
+@media (max-width: 610px) {
+  .wp-block-yuna-themes-for-sail .content .item {
+    width: 100%;
+  }
+}
+@media (max-width: 440px) {
+  .wp-block-yuna-themes-for-sail .content .item {
+    height: 400px;
+  }
+}
+.wp-block-yuna-themes-for-sail .content .item:hover {
+  z-index: 10;
+}
+.wp-block-yuna-themes-for-sail .content .item:hover .back {
+  transform: rotateY(0deg);
+  z-index: 10;
+}
+.wp-block-yuna-themes-for-sail .content .item:hover .front {
+  transform: rotateY(180deg);
+  z-index: -1;
+}
+.wp-block-yuna-themes-for-sail .content .item .back,
+.wp-block-yuna-themes-for-sail .content .item .front {
+  position: relative;
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex: 0 0 100%;
+  /*transition: all 1s cubic-bezier(.5,1.3,.5,1.3);*/
+  transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transform-style: preserve-3d;
+  background-size: cover;
+  background-position: center;
+  border: none;
+  margin: 0;
+  /* backface-visibility: hidden;*/
+}
+.wp-block-yuna-themes-for-sail .content .item .back {
+  background-color: var(--color-light);
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  z-index: -1;
+  transform: rotateY(-180deg);
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+@media (max-width: 440px) {
+  .wp-block-yuna-themes-for-sail .content .item .back {
+    padding: 30px 20px;
+  }
+}
+.wp-block-yuna-themes-for-sail .content .item .back .description {
+  width: 100%;
+  margin-bottom: 32px;
+  text-align: center;
+  transform: translateZ(50px);
+  color: var(--color-dark);
+  font-size: 14px;
+}
+@media (max-width: 575px) {
+  .wp-block-yuna-themes-for-sail .content .item .back .description {
+    margin-bottom: 24px;
+  }
+}
+.wp-block-yuna-themes-for-sail .content .item .back .buttons-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  transform: translateZ(50px);
+  justify-content: center;
+}
+.wp-block-yuna-themes-for-sail .content .item .front {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.wp-block-yuna-themes-for-sail .content .item .front:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background-color: var(--color-dark);
+  opacity: 0.3;
+}
+.wp-block-yuna-themes-for-sail .content .item .front .name {
+  position: absolute;
+  z-index: 2;
+  text-align: center;
+  margin-bottom: 0;
+  top: 50%;
+  left: 0;
+  right: 0;
+  padding-left: 30px;
+  padding-right: 30px;
+  transform: translateY(-50%) translateZ(50px);
+  font-weight: 700;
+  font-size: 32px;
+  color: var(--color-light);
+  text-shadow: 0px 0px 2px black;
+}
+.wp-block-yuna-themes-for-sail .content .item .front .more {
+  position: absolute;
+  width: 42px;
+  z-index: 2;
+  right: 5px;
+  bottom: 5px;
+  filter: drop-shadow(15px 15px 8px rgba(25, 6, 0, 0.2));
+  cursor: pointer;
+}
+.wp-block-yuna-themes-for-sail .content .item .front .more svg {
+  width: 100%;
+  height: auto;
+}
+.wp-block-yuna-themes-for-sail .content .item .front .more svg path {
+  fill: var(--color-light);
+  transition: all 0.3s;
+}
+.wp-block-yuna-themes-for-sail .content .item .front .more:hover svg path {
+  fill: var(--color-accent);
+}
+
+/*# sourceMappingURL=style-index.css.map*/

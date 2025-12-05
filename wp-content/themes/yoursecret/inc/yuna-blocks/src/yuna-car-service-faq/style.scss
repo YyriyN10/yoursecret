@@ -1,0 +1,135 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-yuna-car-services-faq {
+  background-color: var(--color-black);
+
+  .row{
+    align-items: flex-start;
+  }
+
+  .block-name{
+    color: var(--color-gray);
+  }
+
+  .block-title{
+    margin-bottom: 80px;
+
+    @media(max-width: 1200px){
+      margin-bottom: 70px;
+    }
+
+    @media(max-width: 767px){
+      margin-bottom: 32px;
+    }
+  }
+
+  .text{
+    color: var(--color-gray);
+
+    @media(max-width: 767px){
+      margin-bottom: 60px;
+    }
+
+    @media(max-width: 440px){
+      margin-bottom: 50px;
+    }
+  }
+
+  .image-wrapper{
+    @media(max-width: 767px){
+      margin-bottom: 32px;
+    }
+
+    .inner{
+      overflow: hidden;
+      border-radius: 15px;
+      position: relative;
+
+      @media(max-width: 992px){
+        width: 100%;
+        padding-bottom: 200%;
+      }
+
+      @media(max-width: 767px){
+        padding-bottom: 0;
+      }
+
+      img{
+        @media(max-width: 992px){
+          position: absolute;
+          inset: 0;
+        }
+
+        @media(max-width: 767px){
+          position: relative;
+        }
+      }
+    }
+  }
+
+  .accordion-faq{
+    display: grid;
+    gap: 24px;
+
+    .card{
+      .card-header{
+        .btn{
+          padding: 24px 56px 0 0;
+          position: relative;
+          border-top: 2px solid var(--color-soft-red);
+          color: var(--color-white) !important;
+
+          .indicator{
+            width: 32px;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%) rotate(180deg);
+
+            svg{
+              width: 100%;
+              height: auto;
+
+              path{
+                transition: all 0.3s;
+                fill: var(--color-white);
+              }
+            }
+
+          }
+
+          &.collapsed{
+            border-top: 2px solid var(--color-white);
+
+            .indicator{
+              transform: translateY(-50%) rotate(0deg);
+            }
+          }
+        }
+      }
+
+      .card-body{
+        padding: 24px 0 0 0;
+        color: var(--color-gray);
+
+        p{
+          margin-bottom: 8px;
+
+          &:last-child{
+            margin-bottom: 0;
+          }
+        }
+
+        ul,
+        ol{
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}

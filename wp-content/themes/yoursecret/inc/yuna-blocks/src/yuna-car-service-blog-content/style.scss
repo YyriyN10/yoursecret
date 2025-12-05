@@ -1,0 +1,63 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+
+.wp-block-yuna-car-service-blog-content{
+  background-color: var(--color-soft-black);
+
+  h2{
+    font-size: 32px;
+    font-weight: 500;
+  }
+
+  h3{
+    font-size: 28px;
+    font-weight: 500;
+  }
+
+  h4{
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  h5{
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  h6{
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  p,
+  li{
+    color: var(--color-gray);
+    float: inside;
+  }
+
+  a{
+    color: var(--color-soft-red) !important;
+    transition: all 0.3s;
+
+    &:hover{
+      color: var(--color-red)!important;
+    }
+  }
+
+  ul,
+  ol{
+    margin-left: 0;
+  }
+
+  .wp-block-image{
+    border-radius: 15px;
+    overflow: hidden;
+
+  }
+
+}

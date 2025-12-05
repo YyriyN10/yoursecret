@@ -1,0 +1,61 @@
+package pages
+
+import (
+    "fmt"
+    "y-landing/view-admin/layout"
+    "y-landing/models"
+    "y-landing/constants"
+    )
+
+templ User(data *models.TemplateData, user models.User) {
+    @layout.Base("User", data) {
+        <h1 class="h3 mb-2 text-gray-800">User { user.Login }
+            <a href="/users" class="btn btn-primary btn-icon-split btn-sm">
+                <span class="icon text-white-50">
+                    <i class="fas fa-arrow-left"></i>
+                </span>
+                <span class="text">Return</span>
+            </a>
+        </h1>
+            <div class="card shadow mb-4">
+                <div class="card-header d-flex justify-content-between align-items-center py-3 ">
+                    <div class="row">
+                        if data.UserRole == constants.AdminRole {
+                        <a href={ templ.URL(fmt.Sprintf("/users/%d/edit", user.ID)) }>
+                            <span class="fa fa-pen"></span>
+                            <span class="text">Edit</span>
+                        </a>
+                        }
+                        if data.UserRole == constants.AdminRole || data.UserID == user.ID {
+                        <a href={ templ.URL(fmt.Sprintf("/users/%d/edit-pass", user.ID)) }>
+                            <span class="fa fa-pen"></span>
+                            <span class="text">Change password</span>
+                        </a>
+                        }
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <p>Login: { user.Login }</p>
+                        <p>Role: { user.Role } </p>
+                        <p>Status:
+                            if user.Active {
+                                Active
+                            } else {
+                               Deactivated
+                            }
+                            if data.UserRole == constants.AdminRole {
+                                <a href={ templ.URL(fmt.Sprintf("/users/%d/activation", user.ID)) }>
+                                if user.Active {
+                                    (Deactivate)
+                                } else {
+                                   (Activate)
+                                }
+                                </a>
+                            }
+                        </p>
+                    </div>
+                </div>
+            </div>
+    }
+}

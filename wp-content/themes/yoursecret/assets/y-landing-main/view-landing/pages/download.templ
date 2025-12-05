@@ -1,0 +1,70 @@
+package pages
+
+import (
+    "y-landing/view-landing/layout"
+)
+
+templ Download(success bool) {
+    @layout.Base("Download", "") {
+        <section class="py-0 m-0">
+            <div class="container-fluid p-0 m-0">
+                <div class="row gx-0 m-0">
+                    <div class="col-12 p-0 m-0">
+                        <video class="w-100" style="height: 50vh; object-fit: cover; margin-top: 0;" autoplay muted loop playsinline preload="metadata">
+                            <source src="/static/assets/video/download-intro.webm" type="video/webm">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </div>
+            <div class="container px-5 mt-5">
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-lg-10">
+                        if success {
+                            <div class="alert alert-success" role="alert">
+                                ✅ Your email has been successfully saved. We'll keep you updated!
+                            </div>
+                        }
+                        <h2 class="mb-4">🌟 YourSecret: Anonymous social platform</h2>
+                        <p>Discover freedom in anonymity.</p>
+                        <p>YourSecret helps you safely share the things you normally keep inside. Here, every voice is valued, every secret matters, and every emotion finds empathy.</p>
+                        <div class="card bg-light shadow-none my-4">
+                            <div class="card-body">
+                                <h6>We’ll let you in on a secret:</h6>
+                                <p class="mb-0">Using YourSecret might just teach you how to read minds.</p>
+                            </div>
+                        </div>
+                        <hr class="my-5" />
+                        <h4 class="mb-4">
+                            <div class="icon-stack bg-primary text-white me-2"><i data-feather="arrow-right"></i></div>
+                            How it works:
+                        </h4>
+                        <ul>
+                            <li>Take the Quiz: Understand yourself deeper and get your unique mask—your anonymous avatar.</li>
+                            <li>Share Freely: Express emotions, secrets, or thoughts without fear of judgment.</li>
+                            <li>Connect Deeply: Engage anonymously with others who share similar experiences.</li>
+                        </ul>
+                        <hr class="my-5" />
+                        <h4 class="mb-4">
+                            <div class="icon-stack bg-primary text-white me-2"><i data-feather="arrow-right"></i></div>
+                            🚀 Get ready for a new way to connect.
+                        </h4>
+                        <p>Official launch — Fall 2025.</p>
+                        <p>Available soon for iPhone, iPad, and Android.</p>
+                        <hr class="my-5" />
+                        <h4 class="mb-4" id="be-the-first">✉️ Be the first to know</h4>
+                        <p>YourSecret is launching soon.</p>
+                        <p>Want early access and exclusive updates?</p>
+                        <p>Leave your email below to unlock your exclusive invite and gain an early advantage when the platform goes live.</p>
+                        <p class="mb-4">No spam. Just the start of something extraordinary.</p>
+
+                        <form action="/subscribe" method="POST" class="d-flex mb-10 align-items-center gap-2">
+                            <input type="email" name="email" class="form-control" placeholder="Enter your email" required />
+                            <button type="submit" class="btn btn-primary btn-sm">Notify Me</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    }
+}

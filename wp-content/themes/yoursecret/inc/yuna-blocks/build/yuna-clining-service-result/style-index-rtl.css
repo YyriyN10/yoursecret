@@ -1,0 +1,74 @@
+/*!*******************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/yuna-clining-service-result/style.scss ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.wp-block-yuna-yuna-clining-service-result {
+  background-color: var(--color-white);
+}
+.wp-block-yuna-yuna-clining-service-result .block-title {
+  color: var(--color-black);
+  margin-bottom: 20px;
+}
+.wp-block-yuna-yuna-clining-service-result .text {
+  margin-bottom: 30px;
+}
+.wp-block-yuna-yuna-clining-service-result form {
+  margin-top: 30px;
+}
+@media (max-width: 767px) {
+  .wp-block-yuna-yuna-clining-service-result form {
+    margin-bottom: 30px;
+  }
+}
+.wp-block-yuna-yuna-clining-service-result .slide {
+  margin: 15px;
+  border-radius: 24px;
+  border: 1px solid var(--color-accent);
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+.wp-block-yuna-yuna-clining-service-result .slide .pic-wrapper {
+  position: relative;
+  width: 100%;
+  padding-bottom: 110%;
+}
+@media (max-width: 1630px) {
+  .wp-block-yuna-yuna-clining-service-result .slide .pic-wrapper {
+    padding-bottom: 140%;
+  }
+}
+@media (max-width: 1400px) {
+  .wp-block-yuna-yuna-clining-service-result .slide .pic-wrapper {
+    padding-bottom: 150%;
+  }
+}
+@media (max-width: 1200px) {
+  .wp-block-yuna-yuna-clining-service-result .slide .pic-wrapper {
+    padding-bottom: 110%;
+  }
+}
+@media (max-width: 992px) {
+  .wp-block-yuna-yuna-clining-service-result .slide .pic-wrapper {
+    padding-bottom: 140%;
+  }
+}
+@media (max-width: 767px) {
+  .wp-block-yuna-yuna-clining-service-result .slide .pic-wrapper {
+    padding-bottom: 120%;
+  }
+}
+.wp-block-yuna-yuna-clining-service-result .slide .pic-wrapper img {
+  position: absolute;
+  inset: 0;
+}
+.wp-block-yuna-yuna-clining-service-result .slick-dots li {
+  background-color: var(--color-gray);
+}
+.wp-block-yuna-yuna-clining-service-result .slick-dots li.slick-active {
+  background-color: var(--color-accent);
+}

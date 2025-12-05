@@ -1,0 +1,56 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "yuna/car-service-contacts",
+  "version": "0.1.0",
+  "title": "Contacts",
+  "icon": "location",
+  "category": "yuna-block-category",
+  "description": "Contacts",
+  "example": {},
+  "attributes": {
+    "anchorId": {
+      "type": "string"
+    },
+    "topIndent": {
+      "enum": ["indent-top-big", "indent-top-small", "indent-top-medium"],
+      "default": "indent-top-big",
+      "type": "string"
+    },
+
+    "blockName": {
+      "type": "string",
+      "default": null
+    },
+    "blockTitle": {
+      "type": "string",
+      "default": null
+    },
+    "blockText": {
+      "type": "string"
+    },
+    "btnText": {
+      "type": "string",
+      "default": null
+    }
+
+  },
+
+  "supports": {
+    "color": {
+      "background": true,
+      "text": true,
+      "heading": true,
+      "gradients": true
+    },
+    "html": false
+  },
+  "textdomain": "yuna",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php"
+
+}
+
+

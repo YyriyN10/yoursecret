@@ -1,0 +1,49 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "yuna/clining-home-main-screen-inner",
+  "version": "0.1.0",
+  "title": "Внутрішня картка",
+  "category": "yuna-inner-block-category",
+  "icon": "block-default",
+  "description": "Внутрішня картка",
+  "example": {},
+  "attributes": {
+    "imageUrl": {
+      "type": "string",
+      "default": ""
+    },
+    "imageId": {
+      "type": "number",
+      "default": 0
+    },
+    "imageAlt": {
+      "type": "string",
+      "default": ""
+    },
+    "serviceName": {
+      "type": "string",
+      "default": ""
+    },
+    "blockIndex": {
+      "type": "number",
+      "default": 0
+    }
+  },
+  "supports": {
+    "color": {
+      "background": true,
+      "text": true
+    },
+    "html": false
+
+  },
+  "parent": ["yuna/clining-home-main-screen"],
+  "textdomain": "yuna",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php"
+}
+
+

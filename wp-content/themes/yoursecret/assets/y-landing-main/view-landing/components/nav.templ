@@ -1,0 +1,50 @@
+package components
+
+templ Nav() {
+	<header class="bg-white border-bottom header-main">
+		<div class="header-container">
+			<nav class="navbar navbar-expand-md">
+				<a href="/" class="navbar-brand navbar-brand-custom">
+					<img src="/static/assets/img/logo.svg" alt="YourSecret" style="height: 36px;"/>
+					<div class="divider-right divider-vertical d-none d-md-block"></div>
+					<span class="nav-slogan d-none d-md-inline">thoughts, closer than ever!</span>
+				</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ms-auto nav-gap">
+						<li>
+							<a href="/news" class="nav-link-figma text-decoration-none d-flex align-items-center justify-content-center">
+								<div class="text-center">News</div>
+							</a>
+						</li>
+						<li>
+							<a href="/blog" class="nav-link-figma text-decoration-none d-flex align-items-center justify-content-center">
+								<div class="text-center">Blog</div>
+							</a>
+						</li>
+						<li>
+							<a href="/how-it-works" class="nav-link-figma text-decoration-none d-flex align-items-center justify-content-center">
+								<div class="text-center">How it works</div>
+							</a>
+						</li>
+						<li>
+							<a href="/donate" class="nav-link-figma text-decoration-none d-flex align-items-center justify-content-center">
+								<div class="text-center">Donate</div>
+							</a>
+						</li>
+						<li>
+							<a href="#!" class="nav-link-figma text-decoration-none">
+								<div class="d-flex align-items-center justify-content-center justify-content-md-start">
+									<i data-feather="globe" class="me-2" style="width: 24px; height: 24px;"></i>
+									<span>English</span>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</header>
+}

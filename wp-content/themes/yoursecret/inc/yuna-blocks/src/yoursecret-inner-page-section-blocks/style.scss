@@ -1,0 +1,47 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+
+.wp-block-yoursecret-inner-page-section-blocks{
+
+  .text{
+    p{
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+    .wp-block-list{
+      margin-left: 0;
+    }
+
+    .card{
+      margin-bottom: 1.5rem !important;
+
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .button-call{
+    margin-top: 1rem;
+    margin-bottom: 0;
+  }
+
+  .btn{
+    margin-top: 1rem;
+  }
+
+  &.last-section{
+    padding-bottom: 6rem;
+
+    hr.my-5{
+      display: none;
+    }
+  }
+  
+}

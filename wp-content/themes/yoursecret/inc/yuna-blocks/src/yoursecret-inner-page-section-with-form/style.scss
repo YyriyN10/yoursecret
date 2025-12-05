@@ -1,0 +1,57 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+
+.wp-block-yoursecret-inner-page-section-with-form{
+
+  .text{
+    p{
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+    .wp-block-list{
+      margin-left: 0;
+    }
+  }
+
+  .form-control {
+    display: block;
+    width: 100%;
+    padding: 0.875rem 1.125rem;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1;
+    color: #69707a;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #c5ccd6;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.35rem;
+    transition: border-color 0.15s
+    ease-in-out, box-shadow 0.15s
+    ease-in-out;
+  }
+
+
+  &.last-section{
+    padding-bottom: 6rem;
+
+    hr.my-5{
+      display: none;
+    }
+
+    .ps-wrapper{
+      hr.my-5{
+        display: block;
+      }
+    }
+  }
+  
+}

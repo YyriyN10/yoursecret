@@ -1,0 +1,38 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "yoursecret/inner-page-section-blocks-inner",
+  "version": "0.1.0",
+  "title": "Inner card",
+  "category": "yuna-inner-block-category",
+  "icon": "dashicons-block-default",
+  "description": "Inner card",
+  "example": {},
+  "attributes": {
+    "blockIndex": {
+      "type": "number",
+      "default": 0
+    },
+    "sectionTitle": {
+      "type": "string",
+      "default": ""
+    }
+  },
+
+  "supports": {
+    "color": {
+      "background": true,
+      "text": true
+    },
+
+    "html": false
+
+  },
+  "parent": ["yoursecret/inner-page-section-blocks"],
+  "textdomain": "yuna-car-service",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "render": "file:./render.php"
+}
+
+

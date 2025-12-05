@@ -1,0 +1,104 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "yuna/car-service-why-we",
+  "version": "0.1.0",
+  "title": "Why we",
+  "icon": "info",
+  "category": "yuna-block-category",
+  "description": "Why we",
+  "example": {},
+  "attributes": {
+    "anchorId": {
+      "type": "string"
+    },
+    "topIndent": {
+      "enum": [
+        "indent-top-big",
+        "indent-top-small",
+        "indent-top-medium"
+      ],
+      "default": "indent-top-big",
+      "type": "string"
+    },
+    "bottomIndent": {
+      "enum": [
+        "indent-bottom-big",
+        "indent-bottom-small",
+        "indent-bottom-medium"
+      ],
+      "default": "indent-bottom-big",
+      "type": "string"
+    },
+    "blockName": {
+      "type": "string",
+      "default": ""
+    },
+    "blockTitle": {
+      "type": "string",
+      "default": ""
+    },
+    "blockText": {
+      "type": "string",
+      "default": ""
+    },
+    "blockList": {
+      "type": "string",
+      "default": ""
+    },
+    "image1Url": {
+      "type": "string",
+      "default": ""
+    },
+    "image1Id": {
+      "type": "number",
+      "default": 0
+    },
+    "image1Alt": {
+      "type": "number",
+      "default": ""
+    },
+    "image2Url": {
+      "type": "string",
+      "default": ""
+    },
+    "image2Id": {
+      "type": "number",
+      "default": 0
+    },
+    "image2Alt": {
+      "type": "number",
+      "default": ""
+    },
+    "btnText": {
+      "type": "string",
+      "default": ""
+    },
+    "btnTarget": {
+      "type": "number",
+      "default": 0
+    },
+    "experienceNumber": {
+      "type": "string",
+      "default": ""
+    },
+    "experienceText": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "supports": {
+    "color": {
+      "background": true,
+      "text": true,
+      "heading": true,
+      "gradients": true
+    },
+    "html": false
+  },
+  "textdomain": "yuna-car-service",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php"
+}

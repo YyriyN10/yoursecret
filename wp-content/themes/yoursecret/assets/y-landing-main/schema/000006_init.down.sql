@@ -1,0 +1,5 @@
+ALTER TABLE blog_posts
+    DROP COLUMN IF EXISTS slug;
+
+ALTER TABLE news_posts
+    DROP COLUMN IF EXISTS slug;

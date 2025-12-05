@@ -1,0 +1,41 @@
+/*!*************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/yuna-car-service-blog-main-screen/style.scss ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.wp-block-yuna-car-service-blog-main-screen {
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 155px;
+  padding-bottom: 155px;
+  color: var(--color-white);
+}
+@media (max-width: 440px) {
+  .wp-block-yuna-car-service-blog-main-screen {
+    padding-top: 140px;
+    padding-bottom: 140px;
+  }
+}
+.wp-block-yuna-car-service-blog-main-screen:after {
+  position: absolute;
+  content: "";
+  inset: 0;
+  background-color: var(--color-black);
+  opacity: 0.6;
+  z-index: 1;
+}
+.wp-block-yuna-car-service-blog-main-screen .container {
+  position: relative;
+  z-index: 3;
+}
+.wp-block-yuna-car-service-blog-main-screen .page-title {
+  margin-bottom: 0;
+}
+
+/*# sourceMappingURL=style-index.css.map*/

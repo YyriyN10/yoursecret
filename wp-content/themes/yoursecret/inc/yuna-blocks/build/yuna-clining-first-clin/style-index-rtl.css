@@ -1,0 +1,146 @@
+/*!***************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/yuna-clining-first-clin/style.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************************************/
+@charset "UTF-8";
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.wp-block-yuna-clining-first-clin {
+  background-color: var(--color-white);
+}
+.wp-block-yuna-clining-first-clin .block-title {
+  margin-bottom: 30px;
+  color: var(--color-black);
+}
+.wp-block-yuna-clining-first-clin .pic-wrapper {
+  overflow: hidden;
+  border-radius: 24px;
+  border: 1px solid var(--color-accent);
+  position: relative;
+}
+.wp-block-yuna-clining-first-clin .pic-wrapper.pic-1 {
+  width: calc(40% - 15px);
+}
+@media (max-width: 1200px) {
+  .wp-block-yuna-clining-first-clin .pic-wrapper.pic-1 {
+    width: 100%;
+    height: calc(50% - 15px);
+  }
+}
+@media (max-width: 767px) {
+  .wp-block-yuna-clining-first-clin .pic-wrapper.pic-1 {
+    width: calc(50% - 15px);
+    height: auto;
+  }
+}
+.wp-block-yuna-clining-first-clin .pic-wrapper.pic-2 {
+  width: calc(60% - 15px);
+  height: 100%;
+}
+@media (max-width: 1200px) {
+  .wp-block-yuna-clining-first-clin .pic-wrapper.pic-2 {
+    width: 100%;
+    height: calc(50% - 15px);
+  }
+}
+@media (max-width: 767px) {
+  .wp-block-yuna-clining-first-clin .pic-wrapper.pic-2 {
+    width: calc(50% - 15px);
+    height: auto;
+  }
+}
+.wp-block-yuna-clining-first-clin .pic-wrapper.pic-content {
+  position: relative;
+  width: 100%;
+  padding-bottom: 40%;
+  margin-top: 10px;
+}
+@media (max-width: 1200px) {
+  .wp-block-yuna-clining-first-clin .pic-wrapper.pic-content {
+    padding-bottom: 60%;
+  }
+}
+@media (max-width: 767px) {
+  .wp-block-yuna-clining-first-clin .pic-wrapper.pic-content {
+    padding-bottom: 50%;
+  }
+}
+.wp-block-yuna-clining-first-clin .pic-wrapper.pic-content img {
+  position: absolute;
+  inset: 0;
+}
+.wp-block-yuna-clining-first-clin .images-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 1200px) {
+  .wp-block-yuna-clining-first-clin .images-wrapper {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .wp-block-yuna-clining-first-clin .images-wrapper {
+    /*order: 2;*/
+    margin-bottom: 30px;
+  }
+}
+.wp-block-yuna-clining-first-clin .text-content .text {
+  margin-bottom: 30px;
+}
+.wp-block-yuna-clining-first-clin .text-content .text p {
+  margin-bottom: 8px;
+}
+.wp-block-yuna-clining-first-clin .text-content .text p:last-child {
+  margin-bottom: 0;
+}
+.wp-block-yuna-clining-first-clin .text-content .clining-list {
+  padding: 0;
+  margin: 0 0 30px 0;
+  display: grid;
+  gap: 20px;
+}
+.wp-block-yuna-clining-first-clin .text-content .clining-list li {
+  list-style: none;
+  position: relative;
+  padding-right: 45px;
+  font-size: 24px;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+  font-weight: 300;
+}
+@media (max-width: 1400px) {
+  .wp-block-yuna-clining-first-clin .text-content .clining-list li {
+    font-size: 22px;
+  }
+}
+@media (max-width: 992px) {
+  .wp-block-yuna-clining-first-clin .text-content .clining-list li {
+    font-size: 20px;
+  }
+}
+@media (max-width: 440px) {
+  .wp-block-yuna-clining-first-clin .text-content .clining-list li {
+    font-size: 18px;
+  }
+}
+.wp-block-yuna-clining-first-clin .text-content .clining-list li:before {
+  content: "➤";
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: var(--color-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--color-white);
+  font-size: 16px;
+}

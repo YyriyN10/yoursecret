@@ -1,0 +1,199 @@
+/*!****************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/yuna-car-service-reviews/style.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.wp-block-yuna-car-service-reviews {
+  background-color: var(--color-soft-black);
+}
+.wp-block-yuna-car-service-reviews .block-name {
+  color: var(--color-gray);
+}
+.wp-block-yuna-car-service-reviews .block-title {
+  margin-bottom: 40px;
+}
+.wp-block-yuna-car-service-reviews .text {
+  color: var(--color-gray);
+}
+.wp-block-yuna-car-service-reviews .text p {
+  margin-bottom: 8px;
+}
+.wp-block-yuna-car-service-reviews .text p:last-child {
+  margin-bottom: 0;
+}
+.wp-block-yuna-car-service-reviews .slider-wrapper {
+  position: relative;
+}
+.wp-block-yuna-car-service-reviews .slider {
+  width: 100vw;
+  padding-left: 80px;
+  padding-top: 60px;
+  background-color: var(--color-red);
+  border-radius: 24px 0 0 0;
+  position: relative;
+  z-index: 1;
+}
+@media (max-width: 1200px) {
+  .wp-block-yuna-car-service-reviews .slider {
+    padding-top: 50px;
+    padding-left: 70px;
+  }
+}
+@media (max-width: 767px) {
+  .wp-block-yuna-car-service-reviews .slider {
+    padding-top: 40px;
+    padding-left: 60px;
+  }
+}
+@media (max-width: 575px) {
+  .wp-block-yuna-car-service-reviews .slider {
+    padding-top: 32px;
+    padding-left: 24px;
+    width: 140vw;
+  }
+}
+@media (max-width: 440px) {
+  .wp-block-yuna-car-service-reviews .slider {
+    width: 160vw;
+    padding-left: 12px;
+  }
+}
+.wp-block-yuna-car-service-reviews .slick-track {
+  display: flex;
+}
+.wp-block-yuna-car-service-reviews .control-wrapper {
+  gap: 24px;
+  display: flex;
+  position: absolute;
+  z-index: 2;
+  right: 16px;
+  bottom: 24px;
+}
+@media (max-width: 1200px) {
+  .wp-block-yuna-car-service-reviews .control-wrapper {
+    gap: 16px;
+    bottom: 16px;
+  }
+}
+@media (max-width: 440px) {
+  .wp-block-yuna-car-service-reviews .control-wrapper {
+    gap: 12px;
+    bottom: 12px;
+  }
+}
+.wp-block-yuna-car-service-reviews .slide {
+  margin: 0 12px;
+  border-radius: 15px;
+  background-color: var(--color-white);
+  padding: 60px 50px;
+  height: auto;
+}
+@media (max-width: 1200px) {
+  .wp-block-yuna-car-service-reviews .slide {
+    padding: 50px 40px;
+  }
+}
+@media (max-width: 767px) {
+  .wp-block-yuna-car-service-reviews .slide {
+    padding: 40px 30px;
+  }
+}
+@media (max-width: 440px) {
+  .wp-block-yuna-car-service-reviews .slide {
+    padding: 32px 24px;
+  }
+}
+.wp-block-yuna-car-service-reviews .slide .avatar {
+  width: 116px;
+  height: 116px;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: var(--color-soft-red);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+@media (max-width: 1200px) {
+  .wp-block-yuna-car-service-reviews .slide .avatar {
+    width: 105px;
+    height: 105px;
+  }
+}
+@media (max-width: 767px) {
+  .wp-block-yuna-car-service-reviews .slide .avatar {
+    width: 95px;
+    height: 95px;
+  }
+}
+@media (max-width: 440px) {
+  .wp-block-yuna-car-service-reviews .slide .avatar {
+    width: 85px;
+    height: 85px;
+    margin-bottom: 24px;
+  }
+}
+.wp-block-yuna-car-service-reviews .slide .avatar p {
+  color: var(--color-white);
+  text-transform: uppercase;
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 64px;
+  font-weight: 700;
+}
+@media (max-width: 1200px) {
+  .wp-block-yuna-car-service-reviews .slide .avatar p {
+    font-size: 58px;
+  }
+}
+@media (max-width: 767px) {
+  .wp-block-yuna-car-service-reviews .slide .avatar p {
+    font-size: 52px;
+  }
+}
+@media (max-width: 440px) {
+  .wp-block-yuna-car-service-reviews .slide .avatar p {
+    font-size: 46px;
+  }
+}
+.wp-block-yuna-car-service-reviews .slide .review-text {
+  margin-bottom: 32px;
+  height: 150px;
+  overflow-y: scroll;
+  scrollbar-color: var(--color-soft-red) var(--color-white);
+  scrollbar-width: thin;
+  padding-right: 10px;
+  color: var(--color-gray);
+}
+@media (max-width: 767px) {
+  .wp-block-yuna-car-service-reviews .slide .review-text {
+    height: 140px;
+  }
+}
+@media (max-width: 440px) {
+  .wp-block-yuna-car-service-reviews .slide .review-text {
+    margin-bottom: 24px;
+  }
+}
+.wp-block-yuna-car-service-reviews .slide .review-text p {
+  margin-bottom: 8px;
+}
+.wp-block-yuna-car-service-reviews .slide .review-text p:last-child {
+  margin-bottom: 0;
+}
+.wp-block-yuna-car-service-reviews .slide .name {
+  margin-bottom: 0;
+  color: var(--color-black);
+}
+.wp-block-yuna-car-service-reviews .slick-dots li {
+  background-color: var(--color-gray);
+}
+.wp-block-yuna-car-service-reviews .slick-dots li.slick-active {
+  background-color: var(--color-accent);
+}
+
+/*# sourceMappingURL=style-index.css.map*/

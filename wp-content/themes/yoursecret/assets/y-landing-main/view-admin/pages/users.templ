@@ -1,0 +1,74 @@
+package pages
+
+import (
+    "fmt"
+    "y-landing/view-admin/layout"
+    "y-landing/models"
+    "y-landing/constants"
+    )
+
+templ Users(data *models.TemplateData, users []models.User) {
+    @layout.Base("Users", data) {
+        <h1 class="h3 mb-2 text-gray-800">Users
+        if data.UserRole == constants.AdminRole {
+        <a href="/users/add" class="btn btn-primary btn-icon-split btn-sm">
+            <span class="icon text-white-50">
+                <i class="fas fa-arrow-right"></i>
+            </span>
+            <span class="text">Add user</span>
+        </a>
+        }
+        </h1>
+
+        <p class="mb-4">All users are displayed here</p>
+
+        <div class="card shadow mb-4">
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-bordered dataTable" width="100%" cellspacing="0">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Login</th>
+                                <th>Role</th>
+                                <th>Status</th>
+                                <th>More</th>
+                            </tr>
+                        </thead>
+                        <tfoot>
+                            <tr>
+                                <th>ID</th>
+                                <th>Login</th>
+                                <th>Role</th>
+                                <th>Status</th>
+                                <th>More</th>
+                            </tr>
+                        </tfoot>
+                        <tbody>
+                            for _, u := range users {
+                                <tr>
+                                    <td>{ fmt.Sprintf("%d", u.ID) }</td>
+                                    <td>{ u.Login }</td>
+                                    <td>{ u.Role }</td>
+                                    if u.Active {
+                                        <td>🟢</td>
+                                    } else {
+                                        <td>🔴</td>
+                                    }
+                                    <td>
+                                        <a href={ templ.URL(fmt.Sprintf("/users/%d", u.ID)) } class="btn btn-primary btn-icon-split btn-sm">
+                                            <span class="icon text-white-50">
+                                                <i class="fas fa-arrow-right"></i>
+                                            </span>
+                                            <span class="text">Go to user</span>
+                                        </a>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    }
+}

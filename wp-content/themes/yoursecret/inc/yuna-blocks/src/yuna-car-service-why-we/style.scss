@@ -1,0 +1,173 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-yuna-car-service-why-we {
+  background-color: var(--color-soft-black);
+
+  .text-content{
+    padding-top: 105px;
+    padding-bottom: 105px;
+
+    @media(max-width: 1200px){
+      padding-top: 95px;
+      padding-bottom: 95px;
+    }
+
+    @media(max-width: 992px){
+      padding-top: 85px;
+      padding-bottom: 85px;
+    }
+
+  }
+
+  .block-name{
+    color: var(--color-gray);
+  }
+
+  .block-title{
+    margin-bottom: 8px;
+  }
+
+  .text{
+    margin-bottom: 16px;
+    color: var(--color-gray);
+
+    p{
+      margin-bottom: 8px;
+
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .advantages-list{
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 12px;
+    color: var(--color-gray);
+
+    li{
+      list-style: none;
+      position: relative;
+      padding-left: 48px;
+      font-size: 14px;
+
+      &:before{
+        content: '\2714';
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        border: 2px solid var(--color-red);
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        color: var(--color-red);
+        text-align: center;
+      }
+    }
+  }
+
+  .button{
+    margin-top: 32px;
+  }
+
+  .images-wrapper{
+    position: relative;
+
+    .experience{
+      position: absolute;
+      z-index: 2;
+      top: -32px;
+      right: -16px;
+      border-radius: 15px;
+      background-color: var(--color-red);
+      padding: 12px 24px;
+      text-align: center;
+
+      @media(max-width: 575px){
+        right: 0;
+      }
+
+      .number{
+        font-weight: 700;
+        font-size: 64px;
+        color: var(--color-white);
+        line-height: 1.1;
+        margin-bottom: 8px;
+
+        @media(max-width: 1200px){
+          font-size: 58px;
+        }
+
+        @media(max-width: 767px){
+          font-size: 52px;
+        }
+
+        @media(max-width: 440px){
+          font-size: 11vw;
+        }
+      }
+
+      .description{
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .pic-wrapper{
+    overflow: hidden;
+    border-radius: 15px;
+
+    &.big-pic{
+      width: 85%;
+      margin-left: auto;
+      position: relative;
+      z-index: 1;
+      height: 100%;
+
+      @media(max-width: 992px){
+        width: 95%;
+      }
+
+      @media(max-width: 767px){
+        height: auto;
+        width: 80%;
+        padding-bottom: 60%;
+      }
+
+      @media(max-width: 575px){
+        margin-right: 16px;
+      }
+    }
+
+    &.small-pic{
+      position: absolute;
+      z-index: 2;
+      width: 35.7%;
+      padding-bottom: 35.7%;
+      left: -16px;
+      bottom: -32px;
+
+      @media(max-width: 992px){
+        width: 40%;
+        padding-bottom: 40%;
+      }
+
+      @media(max-width: 575px){
+        left: 0;
+      }
+    }
+
+    img{
+      position: absolute;
+      inset: 0;
+    }
+  }
+}

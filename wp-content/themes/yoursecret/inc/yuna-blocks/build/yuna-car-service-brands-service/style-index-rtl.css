@@ -1,0 +1,40 @@
+/*!***********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/yuna-car-service-brands-service/style.scss ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.wp-block-yuna-yuna-car-service-brands-service {
+  background-color: var(--color-black);
+}
+.wp-block-yuna-yuna-car-service-brands-service .row {
+  align-items: center;
+}
+.wp-block-yuna-yuna-car-service-brands-service .subtitle {
+  margin-bottom: 0;
+  color: var(--color-white);
+}
+@media (max-width: 992px) {
+  .wp-block-yuna-yuna-car-service-brands-service .subtitle {
+    margin-bottom: 32px;
+  }
+}
+.wp-block-yuna-yuna-car-service-brands-service .brands-list {
+  gap: 16px;
+  justify-content: center;
+}
+.wp-block-yuna-yuna-car-service-brands-service .brands-list .brand {
+  width: calc(16.66% - 13.3333333333px);
+}
+@media (max-width: 440px) {
+  .wp-block-yuna-yuna-car-service-brands-service .brands-list .brand {
+    width: calc(25% - 12px);
+  }
+}
+.wp-block-yuna-yuna-car-service-brands-service .brands-list .brand img {
+  width: 100%;
+  height: auto;
+}

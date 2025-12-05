@@ -1,0 +1,151 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-yuna-car-service-blog {
+  background-color: var(--color-black);
+
+  .block-name{
+    color: var(--color-gray);
+  }
+
+  .block-title{
+    margin-bottom: 80px;
+
+    @media(max-width: 1200px){
+      margin-bottom: 70px;
+    }
+
+    @media(max-width: 992px){
+      margin-bottom: 24px;
+    }
+
+  }
+
+  .text{
+    color: var(--color-gray);
+
+    @media(max-width: 992px){
+      margin-bottom: 70px;
+    }
+
+    @media(max-width: 767px){
+      margin-bottom: 60px;
+    }
+
+    @media(max-width: 440px){
+      margin-bottom: 50px;
+    }
+
+    p{
+      margin-bottom: 8px;
+
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .content{
+    row-gap: 24px;
+    justify-content: center;
+  }
+
+  .blog-item{
+    span{
+      display: block;
+    }
+
+    .inner{
+      border-radius: 15px;
+      overflow: hidden;
+      padding-bottom: 16px;
+      background-color: var(--color-white);
+      position: relative;
+      height: 100%;
+
+      @media(max-width: 767px){
+        width: 80%;
+        margin: 0 auto;
+      }
+
+      @media(max-width: 440px){
+        width: calc(100% - 32px);
+      }
+    }
+
+    .date{
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      border-radius: 4px;
+      background-color: var(--color-soft-red);
+      padding: 5px 10px;
+      color: var(--color-white);
+      font-size: 12px;
+      z-index: 2;
+    }
+
+    .image-wrapper{
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      padding-bottom: 80%;
+      margin-bottom: 24px;
+      overflow: hidden;
+
+      img{
+        position: absolute;
+        inset: 0;
+        transition: all 0.3s;
+      }
+    }
+
+    .name{
+      margin-bottom: 16px;
+      color: var(--color-black);
+      padding: 0 12px;
+      font-size: 20px;
+      transition: all 0.3s;
+
+      @media(max-width: 1200px){
+        font-size: 18px;
+      }
+
+      @media(max-width: 767px){
+        font-size: 20px;
+      }
+
+      @media(max-width: 440px){
+        font-size: 18px;
+      }
+    }
+
+    .description{
+      color: var(--color-gray) !important;
+      padding: 0 12px;
+      font-size: 16px;
+
+      @media(max-width: 440px){
+        font-size: 14px;
+      }
+    }
+
+    &:hover{
+      .image-wrapper{
+        img{
+          transform: scale(1.2);
+        }
+      }
+
+      .name{
+        color: var(--color-soft-red);
+      }
+    }
+
+
+  }
+}

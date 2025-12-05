@@ -1,0 +1,125 @@
+
+
+.post-cat-nav{
+  .nav-item{
+    background: none;
+    border: 0;
+    border-radius: var(--bs-nav-pills-border-radius);
+    display: block;
+    padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+    font-size: var(--bs-nav-link-font-size);
+    font-weight: var(--bs-nav-link-font-weight);
+    color: var(--bs-nav-link-color);
+    transition: color 0.15s
+    ease-in-out, background-color 0.15s
+    ease-in-out, border-color 0.15s
+    ease-in-out;
+    cursor: pointer;
+
+    &.active{
+      color: var(--bs-nav-pills-link-active-color);
+      background-color: var(--bs-nav-pills-link-active-bg);
+    }
+  }
+}
+
+.pagination-wrapper{
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .pagination-control{
+    border-radius: 0.35rem;
+    border: none;
+    width: 53px;
+    height: 53px;
+    font-weight: 500;
+    background-color: #fff;
+    transition: color 0.15s
+    ease-in-out, background-color 0.15s
+    ease-in-out, border-color 0.15s
+    ease-in-out, box-shadow 0.15s
+    ease-in-out;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+
+    @media(max-width: 767px){
+      width: 40px;
+      height: 40px;
+    }
+
+    &.disable{
+      pointer-events: none;
+    }
+
+    .number{
+      font-size: 0;
+      color: rgba(0,0,0,0);
+    }
+
+    svg{
+      width: 8px;
+      height: auto;
+
+      fill: var(--bs-link-color);
+    }
+
+    &:hover{
+      background-color: #e0e5ec;
+    }
+  }
+
+  ul{
+    display: flex;
+    justify-content: center;
+    margin: 0 0.25rem;
+    padding: 0;
+    align-items: center;
+    gap: 0.25rem;
+
+    li{
+      list-style: none;
+
+      .page-numbers{
+        border-radius: 0.35rem;
+        border: none;
+        width: 53px;
+        height: 53px;
+        font-weight: 500;
+        font-size: 0.9rem;
+        background-color: #fff;
+        transition: color 0.15s
+        ease-in-out, background-color 0.15s
+        ease-in-out, border-color 0.15s
+        ease-in-out, box-shadow 0.15s
+        ease-in-out;
+        position: relative;
+        display: block;
+        line-height: 53px;
+        text-align: center;
+        text-decoration: none;
+        color: var(--bs-link-color) !important;
+
+        @media(max-width: 767px){
+          width: 40px;
+          height: 40px;
+          line-height: 40px;
+        }
+
+        &:hover{
+          background-color: #e0e5ec;
+        }
+
+        &.current{
+          background-color: var(--bs-link-color);
+          color: #fff !important;
+          opacity: 1 !important;
+        }
+      }
+    }
+  }
+}

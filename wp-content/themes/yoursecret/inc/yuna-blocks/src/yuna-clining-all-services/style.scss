@@ -1,0 +1,146 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-yuna-yuna-clining-all-services {
+  background-color: var(--color-white);
+
+  .block-title{
+    color: var(--color-black);
+    margin-bottom: 0;
+  }
+
+  .text{
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+
+  .services-list{
+    margin-top: 50px;
+    row-gap: 30px;
+    justify-content: center;
+
+    @media(max-width: 1200px){
+      margin-top: 40px;
+    }
+
+    @media(max-width: 767px){
+      margin-top: 30px;
+    }
+
+  }
+
+  .service-item{
+    span{
+      display: block;
+    }
+    .inner{
+      padding: 40px 20px;
+      border: 1px solid var(--color-white) !important;
+      border-radius: 24px;
+      background-color: var(--color-white);
+      box-shadow: 0 0 15px 1px rgba(0,0,0,0.1);
+      height: 100%;
+      position: relative;
+
+      @media(max-width: 1200px){
+        padding: 20px;
+      }
+
+      @media(max-width: 575px){
+        margin: 0;
+      }
+    }
+
+    .pic-wrapper{
+      border-radius: 24px;
+      overflow: hidden;
+      width: 100%;
+      padding-bottom: 100%;
+      position: relative;
+      margin-bottom: 30px;
+
+      @media(max-width: 575px){
+        padding-bottom: 80%;
+        margin-bottom: 20px;
+      }
+
+      img{
+        position: absolute;
+        inset: 0;
+        transition: all 0.3s;
+      }
+    }
+
+    .name{
+      text-align: center;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      color: var(--color-black) !important;
+
+      @media(max-width: 575px){
+        margin-bottom: 15px;
+      }
+    }
+
+    .description{
+      text-align: center;
+      margin-bottom: 40px;
+      color: var(--color-gray) !important;
+
+      @media(max-width: 575px){
+        margin-bottom: 30px;
+      }
+    }
+
+    .more{
+      color: var(--color-accent) !important;
+      text-align: center;
+      font-weight: 500;
+      margin-bottom: 0;
+      line-height: 1.2;
+      text-transform: capitalize;
+      letter-spacing: -0.01em;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 40px;
+      width: 100%;
+      transition: all 0.3s;
+
+      @media(max-width: 1200px){
+        bottom: 20px;
+      }
+    }
+
+    &.slick-current.slick-active{
+      border-color: var(--color-accent) !important;
+    }
+
+    &:hover{
+      .pic-wrapper{
+        img{
+          transform: scale(1.1);
+        }
+      }
+
+      .more{
+        text-shadow: 0 0 15px var(--color-accent);
+      }
+    }
+
+  }
+
+  .slick-dots{
+    li{
+      background-color: var(--color-gray);
+
+      &.slick-active{
+        background-color: var(--color-accent);
+      }
+    }
+  }
+}

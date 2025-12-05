@@ -1,0 +1,31 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "yuna/car-service-breadcrumbs",
+  "version": "0.1.0",
+  "title": "Custom breadcrumbs",
+  "category": "yuna-page-block-category",
+  "icon": "admin-links",
+  "description": "Custom breadcrumbs",
+  "example": {},
+  "attributes": {
+    "parentPage": {
+      "type": "number",
+      "default": 0
+    }
+  },
+  "supports": {
+    "color": {
+      "background": true,
+      "text": true,
+      "heading": true,
+      "gradients": true
+    },
+    "html": false
+  },
+  "textdomain": "yuna-car-service",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php"
+}

@@ -1,0 +1,87 @@
+package pages
+
+import (
+    "y-landing/view-landing/layout"
+)
+
+templ Report() {
+	@layout.Base("Report a Violation", "") {
+        <section class="py-10">
+          <div class="container px-5">
+            <div class="row gx-5 justify-content-center">
+              <div class="col-lg-10">
+
+                <h2 class="mb-4">Report a Violation</h2>
+                <p>YourSecret is a community built on trust, emotional freedom, and respect.</p>
+                <p>If you see something that violates our Community Guidelines or threatens the safety of our users, we encourage you to report it.</p>
+                <p>Together, we can keep YourSecret safe, supportive, and inspiring.</p>
+
+                <hr class="my-5" />
+                <h4 class="mb-4">
+                  <div class="icon-stack bg-primary text-white me-2"><i data-feather="arrow-right"></i></div>
+                  🚨 What You Can Report
+                </h4>
+                <p>You can report any content, user, or behavior involving:</p>
+                <ul>
+                  <li>Hate speech or harassment</li>
+                  <li>Threats of violence or harm</li>
+                  <li>Non-consensual sharing of private information (doxxing)</li>
+                  <li>Scam attempts or impersonation</li>
+                  <li>Promotion of self-harm or suicide</li>
+                  <li>Illegal activities or content</li>
+                  <li>Spam or manipulation of the platform</li>
+                </ul>
+                <p>If you’re unsure whether something violates our rules — report it anyway. Our team will review it carefully.</p>
+
+                <hr class="my-5" />
+                <h4 class="mb-4">
+                  <div class="icon-stack bg-primary text-white me-2"><i data-feather="arrow-right"></i></div>
+                  🛡️ How to Report
+                </h4>
+                <ul>
+                    <li><strong>In the App:</strong></li>
+                    <p>Tap the three dots (...) next to a post, chat, or profile → Select "Report" → Choose a reason.</p>
+
+                    <li><strong>On the Website:</strong></li>
+                    <p>Click the options icon (...) → Select "Report" → Provide details if needed.</p>
+
+                    <li><strong>By Email:</strong></li>
+                    <p><a href="mailto:support@yoursecret.org">support@yoursecret.org</a></p>
+                    <div class="card bg-light shadow-none">
+                        <div class="card-body">
+                            <h6>Please include:</h6>
+                                <ul class="mb-0">
+                                    <li class="text-italic">A screenshot (if possible)</li>
+                                    <li class="text-italic">Link to the content (if available)</li>
+                                    <li class="text-italic">A short description of what happened</li>
+                                </ul>
+                        </div>
+                    </div>
+                </ul>
+
+                <p>All reports are confidential.</p>
+
+                <hr class="my-5" />
+                <h4 class="mb-4">
+                  <div class="icon-stack bg-primary text-white me-2"><i data-feather="arrow-right"></i></div>
+                  🧐 What Happens After You Report
+                </h4>
+                <ul>
+                    <li><p>Our moderation team reviews each report individually.</p></li>
+                    <li><p>We act quickly — most reports are reviewed within 24–48 hours.</p></li>
+                    <li><p>We may remove content, suspend accounts, or contact users if necessary.</p></li>
+                    <li><p>For severe cases (e.g., threats, illegal activity), we may contact appropriate authorities.</p></li>
+                </ul>
+
+
+                <hr class="my-5" />
+                <h4>🤝 <strong>Thank You for Helping Protect Our Community</strong></h4>
+                <p>Every report makes YourSecret a safer and kinder space for everyone.</p>
+                <p>We appreciate your vigilance and support.</p>
+
+              </div>
+            </div>
+          </div>
+        </section>
+	}
+}

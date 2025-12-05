@@ -1,0 +1,149 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-yuna-clining-first-clin {
+  background-color: var(--color-white);
+
+  .block-title{
+    margin-bottom: 30px;
+    color: var(--color-black);
+  }
+
+  .pic-wrapper{
+    overflow: hidden;
+    border-radius: 24px;
+    border: 1px solid var(--color-accent);
+    position: relative;
+
+    &.pic-1{
+      width: calc(40% - 15px);
+
+      @media(max-width: 1200px){
+        width: 100%;
+        height: calc(50% - 15px);
+      }
+
+      @media(max-width: 767px){
+        width: calc(50% - 15px);
+        height: auto;
+      }
+    }
+    &.pic-2{
+      width: calc(60% - 15px);
+      height: 100%;
+
+      @media(max-width: 1200px){
+        width: 100%;
+        height: calc(50% - 15px);
+      }
+
+      @media(max-width: 767px){
+        width: calc(50% - 15px);
+        height: auto;
+      }
+    }
+
+    &.pic-content{
+      position: relative;
+      width: 100%;
+      padding-bottom: 40%;
+      margin-top: 10px;
+
+      @media(max-width: 1200px){
+        padding-bottom: 60%;
+      }
+
+      @media(max-width: 767px){
+        padding-bottom: 50%;
+      }
+
+      img{
+        position: absolute;
+        inset: 0;
+      }
+    }
+  }
+
+  .images-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media(max-width: 1200px){
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    @media(max-width: 767px){
+      /*order: 2;*/
+      margin-bottom: 30px;
+    }
+  }
+
+  .text-content{
+
+    .text{
+      margin-bottom: 30px;
+
+      p{
+        margin-bottom: 8px;
+
+        &:last-child{
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    .clining-list{
+      padding: 0;
+      margin: 0 0 30px 0;
+      display: grid;
+      gap: 20px;
+
+      li{
+        list-style: none;
+        position: relative;
+        padding-left: 45px;
+        font-size: 24px;
+        letter-spacing: -0.01em;
+        line-height: 1.2;
+        font-weight: 300;
+
+        @media(max-width: 1400px){
+          font-size: 22px;
+        }
+
+        @media(max-width: 992px){
+          font-size: 20px;
+        }
+
+        @media(max-width: 440px){
+          font-size: 18px;
+        }
+
+        &:before{
+          content: '\27A4';
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          background-color: var(--color-accent);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: absolute;
+          left: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          color: var(--color-white);
+          font-size: 16px;
+        }
+      }
+    }
+
+
+  }
+}

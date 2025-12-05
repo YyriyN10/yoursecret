@@ -1,0 +1,183 @@
+/*!*************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/yuna-clining-services/style.scss ***!
+  \*************************************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.wp-block-yuna-yuna-clining-services {
+  background-color: var(--color-white);
+}
+.wp-block-yuna-yuna-clining-services .block-title {
+  color: var(--color-black);
+  margin-bottom: 0;
+}
+.wp-block-yuna-yuna-clining-services .text {
+  margin-top: 10px;
+  margin-bottom: 0;
+  width: 80%;
+}
+@media (max-width: 767px) {
+  .wp-block-yuna-yuna-clining-services .text {
+    width: 100%;
+  }
+}
+.wp-block-yuna-yuna-clining-services .controls-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+@media (max-width: 767px) {
+  .wp-block-yuna-yuna-clining-services .controls-wrapper {
+    justify-content: flex-start;
+  }
+}
+@media (max-width: 575px) {
+  .wp-block-yuna-yuna-clining-services .controls-wrapper {
+    display: none;
+  }
+}
+.wp-block-yuna-yuna-clining-services .control-wrapper {
+  display: grid;
+  gap: 15px;
+}
+@media (max-width: 767px) {
+  .wp-block-yuna-yuna-clining-services .control-wrapper {
+    display: flex;
+    margin-top: 30px;
+  }
+}
+.wp-block-yuna-yuna-clining-services .slider-wrapper {
+  margin-top: 50px;
+  padding-right: 0;
+}
+@media (max-width: 1200px) {
+  .wp-block-yuna-yuna-clining-services .slider-wrapper {
+    margin-top: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .wp-block-yuna-yuna-clining-services .slider-wrapper {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 575px) {
+  .wp-block-yuna-yuna-clining-services .slider-wrapper {
+    padding-right: 15px;
+  }
+}
+.wp-block-yuna-yuna-clining-services .slider {
+  width: 100vw;
+}
+@media (max-width: 575px) {
+  .wp-block-yuna-yuna-clining-services .slider {
+    width: 100%;
+  }
+}
+.wp-block-yuna-yuna-clining-services .slick-list {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.wp-block-yuna-yuna-clining-services .slick-track {
+  display: flex;
+}
+.wp-block-yuna-yuna-clining-services .slide {
+  margin: 0 15px;
+  padding: 40px 20px;
+  border: 1px solid var(--color-white) !important;
+  border-radius: 24px;
+  background-color: var(--color-white);
+  display: block;
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.1);
+  height: auto;
+  position: relative;
+}
+@media (max-width: 1200px) {
+  .wp-block-yuna-yuna-clining-services .slide {
+    padding: 20px;
+  }
+}
+@media (max-width: 575px) {
+  .wp-block-yuna-yuna-clining-services .slide {
+    margin: 0;
+  }
+}
+.wp-block-yuna-yuna-clining-services .slide span {
+  display: block;
+}
+.wp-block-yuna-yuna-clining-services .slide .pic-wrapper {
+  border-radius: 24px;
+  overflow: hidden;
+  width: 100%;
+  padding-bottom: 100%;
+  position: relative;
+  margin-bottom: 30px;
+}
+@media (max-width: 575px) {
+  .wp-block-yuna-yuna-clining-services .slide .pic-wrapper {
+    padding-bottom: 80%;
+    margin-bottom: 20px;
+  }
+}
+.wp-block-yuna-yuna-clining-services .slide .pic-wrapper img {
+  position: absolute;
+  inset: 0;
+  transition: all 0.3s;
+}
+.wp-block-yuna-yuna-clining-services .slide .name {
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: var(--color-black) !important;
+}
+@media (max-width: 575px) {
+  .wp-block-yuna-yuna-clining-services .slide .name {
+    margin-bottom: 15px;
+  }
+}
+.wp-block-yuna-yuna-clining-services .slide .description {
+  text-align: center;
+  margin-bottom: 40px;
+  color: var(--color-gray) !important;
+}
+@media (max-width: 575px) {
+  .wp-block-yuna-yuna-clining-services .slide .description {
+    margin-bottom: 30px;
+  }
+}
+.wp-block-yuna-yuna-clining-services .slide .more {
+  color: var(--color-accent) !important;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 0;
+  line-height: 1.2;
+  text-transform: capitalize;
+  letter-spacing: -0.01em;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 40px;
+  width: 100%;
+  transition: all 0.3s;
+}
+@media (max-width: 1200px) {
+  .wp-block-yuna-yuna-clining-services .slide .more {
+    bottom: 20px;
+  }
+}
+.wp-block-yuna-yuna-clining-services .slide.slick-current.slick-active {
+  border-color: var(--color-accent) !important;
+}
+.wp-block-yuna-yuna-clining-services .slide:hover .pic-wrapper img {
+  transform: scale(1.1);
+}
+.wp-block-yuna-yuna-clining-services .slide:hover .more {
+  text-shadow: 0 0 15px var(--color-accent);
+}
+.wp-block-yuna-yuna-clining-services .slick-dots li {
+  background-color: var(--color-gray);
+}
+.wp-block-yuna-yuna-clining-services .slick-dots li.slick-active {
+  background-color: var(--color-accent);
+}

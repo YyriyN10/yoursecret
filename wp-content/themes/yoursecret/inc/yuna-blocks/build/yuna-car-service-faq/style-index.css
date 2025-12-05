@@ -1,0 +1,123 @@
+/*!************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/yuna-car-service-faq/style.scss ***!
+  \************************************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.wp-block-yuna-car-services-faq {
+  background-color: var(--color-black);
+}
+.wp-block-yuna-car-services-faq .row {
+  align-items: flex-start;
+}
+.wp-block-yuna-car-services-faq .block-name {
+  color: var(--color-gray);
+}
+.wp-block-yuna-car-services-faq .block-title {
+  margin-bottom: 80px;
+}
+@media (max-width: 1200px) {
+  .wp-block-yuna-car-services-faq .block-title {
+    margin-bottom: 70px;
+  }
+}
+@media (max-width: 767px) {
+  .wp-block-yuna-car-services-faq .block-title {
+    margin-bottom: 32px;
+  }
+}
+.wp-block-yuna-car-services-faq .text {
+  color: var(--color-gray);
+}
+@media (max-width: 767px) {
+  .wp-block-yuna-car-services-faq .text {
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 440px) {
+  .wp-block-yuna-car-services-faq .text {
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .wp-block-yuna-car-services-faq .image-wrapper {
+    margin-bottom: 32px;
+  }
+}
+.wp-block-yuna-car-services-faq .image-wrapper .inner {
+  overflow: hidden;
+  border-radius: 15px;
+  position: relative;
+}
+@media (max-width: 992px) {
+  .wp-block-yuna-car-services-faq .image-wrapper .inner {
+    width: 100%;
+    padding-bottom: 200%;
+  }
+}
+@media (max-width: 767px) {
+  .wp-block-yuna-car-services-faq .image-wrapper .inner {
+    padding-bottom: 0;
+  }
+}
+@media (max-width: 992px) {
+  .wp-block-yuna-car-services-faq .image-wrapper .inner img {
+    position: absolute;
+    inset: 0;
+  }
+}
+@media (max-width: 767px) {
+  .wp-block-yuna-car-services-faq .image-wrapper .inner img {
+    position: relative;
+  }
+}
+.wp-block-yuna-car-services-faq .accordion-faq {
+  display: grid;
+  gap: 24px;
+}
+.wp-block-yuna-car-services-faq .accordion-faq .card .card-header .btn {
+  padding: 24px 56px 0 0;
+  position: relative;
+  border-top: 2px solid var(--color-soft-red);
+  color: var(--color-white) !important;
+}
+.wp-block-yuna-car-services-faq .accordion-faq .card .card-header .btn .indicator {
+  width: 32px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%) rotate(180deg);
+}
+.wp-block-yuna-car-services-faq .accordion-faq .card .card-header .btn .indicator svg {
+  width: 100%;
+  height: auto;
+}
+.wp-block-yuna-car-services-faq .accordion-faq .card .card-header .btn .indicator svg path {
+  transition: all 0.3s;
+  fill: var(--color-white);
+}
+.wp-block-yuna-car-services-faq .accordion-faq .card .card-header .btn.collapsed {
+  border-top: 2px solid var(--color-white);
+}
+.wp-block-yuna-car-services-faq .accordion-faq .card .card-header .btn.collapsed .indicator {
+  transform: translateY(-50%) rotate(0deg);
+}
+.wp-block-yuna-car-services-faq .accordion-faq .card .card-body {
+  padding: 24px 0 0 0;
+  color: var(--color-gray);
+}
+.wp-block-yuna-car-services-faq .accordion-faq .card .card-body p {
+  margin-bottom: 8px;
+}
+.wp-block-yuna-car-services-faq .accordion-faq .card .card-body p:last-child {
+  margin-bottom: 0;
+}
+.wp-block-yuna-car-services-faq .accordion-faq .card .card-body ul,
+.wp-block-yuna-car-services-faq .accordion-faq .card .card-body ol {
+  margin-left: 0;
+}
+
+/*# sourceMappingURL=style-index.css.map*/

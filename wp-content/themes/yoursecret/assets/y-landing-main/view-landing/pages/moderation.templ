@@ -1,0 +1,106 @@
+package pages
+
+import (
+	"y-landing/view-landing/layout"
+)
+
+templ Moderation() {
+	@layout.Base("Moderation & Appeals Process", "") {
+		<section class="py-10">
+			<div class="container px-5">
+				<div class="row gx-5 justify-content-center">
+					<div class="col-lg-10">
+						<h2 class="mb-4">Moderation & Appeals Process</h2>
+						<p>YourSecret is committed to creating a safe, respectful, and empowering environment for all users.</p>
+						<p>Our moderation system is designed to balance freedom of expression with community safety and trust.</p>
+
+						<hr class="my-5" />
+						<h4 class="mb-4">
+							<div class="icon-stack bg-primary text-white me-2"><i data-feather="shield"></i></div>
+							🔒 How Moderation Works
+						</h4>
+						<p>We use a combination of:</p>
+						<ul>
+							<li><strong>Automated Systems:</strong> To detect clear violations such as spam, hate speech, or threats.</li>
+							<li><strong>Human Moderators:</strong> To review user reports and make careful, case-by-case decisions.</li>
+							<li><strong>Community Reporting:</strong> Users can flag inappropriate content directly within the app or website.</li>
+						</ul>
+						<p>All moderation decisions aim to protect users while respecting freedom of speech within the boundaries of our <a href="/community-guidelines">Community Guidelines</a>.</p>
+
+						<hr class="my-5" />
+						<h4 class="mb-4">
+							<div class="icon-stack bg-primary text-white me-2"><i data-feather="alert-triangle"></i></div>
+							🔢 What Can Be Moderated
+						</h4>
+						<p>Moderators may review and take action against:</p>
+						<ul>
+							<li>Posts or chats containing hate speech, threats, harassment</li>
+							<li>Content promoting self-harm or violence</li>
+							<li>Doxxing or revealing personal information</li>
+							<li>Impersonation, scams, or spam</li>
+							<li>Severe misinformation or harmful myths</li>
+						</ul>
+						<p>Actions can include:</p>
+						<ul>
+							<li>Content removal</li>
+							<li>Warning notices</li>
+							<li>Temporary suspensions</li>
+							<li>Permanent account bans (for severe or repeated violations)</li>
+						</ul>
+
+						<hr class="my-5" />
+						<h4 class="mb-4">
+							<div class="icon-stack bg-primary text-white me-2"><i data-feather="mail"></i></div>
+							🚨 Appeals Process
+						</h4>
+						<ol>
+							<li>
+								<div class="card-body">
+									<h6>Submit an Appeal:</h6>
+									<ul class="mb-0">
+										<li>Email us at 📧 <a href="mailto:appeals@yoursecret.org">appeals@yoursecret.org</a> with:</li>
+										<ul>
+											<li>Your username</li>
+											<li>A description of what happened</li>
+											<li>Why you believe the moderation decision should be reviewed</li>
+										</ul>
+									</ul>
+								</div>
+								<br />
+							</li>
+
+							<li>
+								<p><strong>Review by Senior Moderators:</strong><br />
+								Appeals are reviewed by a separate team from the original moderators.</p>
+							</li>
+
+							<li>
+								<p><strong>Response Timeline:</strong><br />
+								We aim to respond to all appeals within 5–7 business days.</p>
+							</li>
+
+							<li>
+								<p><strong>Final Decision:</strong><br />
+								Once reviewed, the decision will be final, and you will be notified via email.</p>
+							</li>
+						</ol>
+
+						<hr class="my-5" />
+						<h4 class="mb-4">
+							<div class="icon-stack bg-primary text-white me-2"><i data-feather="star"></i></div>
+							✨ Our Principles
+						</h4>
+						<ul>
+							<li><strong>Transparency:</strong> You deserve to understand why actions were taken.</li>
+							<li><strong>Fairness:</strong> Appeals are handled neutrally and with fresh eyes.</li>
+							<li><strong>Safety First:</strong> Protecting the YourSecret community remains our top priority.</li>
+						</ul>
+
+                        <hr class="my-5" />
+						<p class="lead"><strong>Thank you for helping make YourSecret a safe, inspiring, and empowering space for all.</strong></p>
+					</div>
+				</div>
+			</div>
+		</section>
+	}
+}
